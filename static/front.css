@@ -1,0 +1,60 @@
+#ab img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+  }
+  
+  #a{
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/31787/stars.jpg") no-repeat;
+    background-attachment: relative;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+ #a h2 {
+    text-align: center;
+    background-attachment: relative;
+    background-size: cover;
+    font-size: 30px;
+    margin: 0;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: tomato;
+  }
+  
+  #abc {
+    -webkit-animation: 10s slide infinite linear;
+            animation: 10s slide infinite linear;
+    margin-top: -75px;
+    padding: 0 2em;
+    position: absolute;
+    left: -100%;
+    text-align: center;
+    top: 50%;
+    width: 50em;
+  }
+#abc h2{
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/31787/stars.jpg") no-repeat;
+    background-attachment: relative;
+    background-size: cover;
+    font-size: 75px;
+    margin: 0;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 1.5em;
+  }
+  
+  @-webkit-keyframes slide {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes slide {
+    to {
+      left: 100%;
+    }
+  }
+  

@@ -23,7 +23,7 @@ urlpatterns = [
     path('reset-password', PasswordResetView.as_view(template_name='accounts/reset_password.html'),name='reset_password'),
     path('reset-password/done',PasswordResetDoneView.as_view(),name='password_reset_done'),
     path('reset-password/confirm/<uidb64>/<token>',PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
-    path('reset-password/complete',PasswordResetCompleteView.as_view(),name='password_reset_complete'),
+    path('reset-password/complete',views.PasswordResetCompleteView,name='password_reset_complete'),
 ]
 #    python -m smtpd -n -c DebuggingServer localhost:1025
 

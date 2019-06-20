@@ -135,8 +135,17 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 LOGIN_REDIRECT_URL='/account/'
 
-
+"""
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
+"""
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = '17bcs022@smvdu.ac.in'
+EMAIL_HOST_PASSWORD = 'gk3017528'
+OPERATIONS_EMAIL = 'aplidotaiintern@gmail.com'
 
 django_heroku.settings(locals())

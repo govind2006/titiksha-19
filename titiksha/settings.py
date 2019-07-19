@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [
@@ -65,6 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
             ],
         },
     },
@@ -146,6 +148,6 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = '17bcs022@smvdu.ac.in'
 EMAIL_HOST_PASSWORD = 'gk3017528'
-OPERATIONS_EMAIL = 'aplidotaiintern@gmail.com'
+OPERATIONS_EMAIL = 'govindkumar4672@gmail.com'
 
 django_heroku.settings(locals())

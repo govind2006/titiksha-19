@@ -137,6 +137,198 @@
 			-ms-transform: translate(-50%,-50%);
 		  }
 
+
+#team
+{
+  background: radial-gradient(#16222A, #3A6073);
+}
+
+
+/*set up the container to be responsive columns that push down to a single column layout*/
+.team-section{
+	margin:20px auto 80px;
+	display:grid;
+	/*minimum size  350px, maximum size 1fr of the viewport*/
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap:10px;
+}
+
+.card{
+	z-index:0;
+	margin: 0 auto;
+	position:relative;
+	width:350px;
+	background-color:#333;
+	padding:20px;
+  
+	text-align:center;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, .5);
+	overflow:hidden;
+}
+
+.layer{
+	z-index:1;
+	position:absolute; /*position away from .card & .content*/
+
+	top: calc(100% - 2px); /*pushes up the layer by 2px to appear as border-bottom on card by default*/
+	left:0;
+	width:100%;
+	height:100%;
+	background: linear-gradient(#43cea2, #185a9d);
+
+	transition:0.5s;/*sets up for animation*/
+}
+
+/*cursor for hovering over card*/
+.card:hover{
+	cursor:pointer;
+}
+/*when hovering over card, .layer will move up to the top of parent container .card */
+.card:hover .layer{
+	top:0;
+}
+
+.content{
+	z-index:3;
+	/*content is relative to parent card to allow text to appear on top of .Layer (absolute)*/
+	position:relative;
+}
+
+
+/*turn image holder into circle*/
+.content .image{
+	width:150px;
+	height:150px;
+	border-radius:50%;
+	overflow:hidden;
+	margin: 0 auto;
+	border:4px solid white;
+	box-shadow: 0 6px 20px rgba(0,0,0,.5);
+	margin-top:10px;
+	margin-bottom:50px;
+}
+
+/*move image to acknowledge click*/
+.image:active{
+	position:relative;
+	top:3px;
+}
+
+/*reduce size of image*/
+img{
+	width:150px;
+	height:150px;
+}
+
+/*style name and position title */
+.content .details h2{
+	font-size:1.2em;
+	color:white;
+}
+.content .details h2 span{
+	font-size:1em;
+	color:#2980b9;
+	font-weight:100;
+	transition:0.5s;
+}
+
+
+/*when hovering .card, change colour of text*/
+.card:hover .content h2 span{
+	color:white;
+}
+
+
+.butn {
+  border: 0;
+  outline: 0;
+  padding:0;
+  
+  background-image: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 25px;
+  margin-bottom:1em;
+  vertical-align: middle;
+  line-height: 1.6;
+  cursor: pointer;
+  text-align: center;
+  background-color: #333;
+  white-space: nowrap;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.2s ease;
+  position: relative;
+}
+.butn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #ccc;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+.butn:hover:before {
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  visibility: visible;
+  opacity: 1;
+}
+.butn.butn--dark {
+  min-width: 170px;
+  background-color: #242424;
+}
+.butn.butn--dark:before {
+  border-color: #242424;
+}
+.butn.butn--loading {
+  opacity: 0.5;
+}
+.butn.butn--loading:before {
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-animation: loading-anim 1.5s infinite;
+          animation: loading-anim 1.5s infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes loading-anim {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loading-anim {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+		  
+
 	</style>
 
 </head>
@@ -215,6 +407,7 @@
 				<div class="owl-item">
 						<div class="background_image" style="background-image:url(static/images/original1.gif)">
 						<!--
+							
 							<div class="alert1 col text-center col-sm-12 col-md-12 col-lg-6 col-xl-3">
 								<h5>
 								website is under construction...
@@ -242,7 +435,7 @@
 															<span class="ring"></span>
 														  </div>
 														</div>
-
+										
 											
 											<div class="">		
 											<section id="z">
@@ -469,8 +662,8 @@
 														</div>
 												</section>
 											</div>
+										
 										-->
-
 							<div class="row">
 								<div class="col">
 									<div class="home_slider_content">

@@ -147,11 +147,11 @@ div.a {
     <div class="col text-center">
             <br><br><br>
             <div class="section_title">
-                <h1><i>Events</i></h1>
+                <h1><i>Formal Events</i></h1>
             </div>
         </div>
 </section>
-
+<!--
 <div class="container-fluid">
     <div class="container-fluid">
      <div class="row">
@@ -177,10 +177,9 @@ div.a {
    </div>
  </div>
  
+-->
 
-
-  <section id="Formal">
-        <h2><ul class="col text-center">Formal</ul></h2>	
+  <section id="Formal">	
 			    	<div class="container">
 					      <div class="row">
                   <!--insert-->
@@ -217,13 +216,11 @@ div.a {
     			   		</div>
 		        	</div>
 	</section>
+<br>
 
-
-
-
-
-          
-<br><br>
+<button type="button" class="butn butn--dark butn--loading"s onclick="goBack()">
+    <h5>Back To Events</h5> 
+   </button>
 
 <section style="background-color:rgb(54, 63, 66)">
 		<div class="container">
@@ -265,6 +262,15 @@ div.a {
 <script src="{% static 'plugins/easing/easing.js' %}"></script>
 <script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
 <script src="{% static 'js/custom.js' %}"></script>
+
+<script>
+    function goBack() {
+      window.history.back()
+    }
+    function Warn() {
+      alert ("You have successfully submitted your event registration form");
+   }
+</script>
 
 </body>
 </html>

@@ -1,83 +1,77 @@
-<!-- Footer -->
-<footer class="page-footer font-small blue pt-4">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+			
+			  .footer {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+			
+			  }
+	</style>
+</head>
+<body>
+			  
+			  <footer class="footer">
+				
+<section style="background-color:rgb(54, 63, 66)">
+		<div class="container">
+				<div class="row">										
+				<div class="col text-center">
+					<div class="section_title"><font color="red"><h2>
+						Shri Mata Vaishno Devi University</h2></font>
+					</div>				</div>
+				</div>
+				<div class="col text-center">			
+					<div class="owl-item text-center">
+						<div class="testimonial">Katra,Jammu & Kashmir,182320</div>
+					<body>
+							<ul class="col text-center">
+									<font size="4">
+								<a id="qw" href="https://www.facebook.com/Titksha.smvdu/">
+										<i class="fa fa-facebook"></i></a>
+								<a id="qw" href="mailto:titiksha@smvdu.ac.in">
+								<i class="fa fa-google-plus"></i></a>
+									<a id="qw" href="https://www.instagram.com/titiksha_smvdu/">
+								<i class="fa fa-instagram"></i></a>
+								</font>
+							</ul>
+						</body>
+					</div>
+					</div>
+		</div>
 
-		<!-- Footer Links -->
-		<div class="container-fluid text-center text-md-left">
+	</section>
+			  </footer>
+
+
+</body>
+<script>
+		var bumpIt = function() {
+			$('body').css('margin-bottom', $('.footer').height());
+		  },
+		  didResize = false;
 	  
-		  <!-- Grid row -->
-		  <div class="row">
+	  bumpIt();
 	  
-			<!-- Grid column -->
-			<div class="col-md-6 mt-md-0 mt-3">
+	  $(window).resize(function() {
+		didResize = true;
+	  });
+	  setInterval(function() {
+		if(didResize) {
+		  didResize = false;
+		  bumpIt();
+		}
+	  }, 250);
 	  
-			  <!-- Content -->
-			  <h5 class="text-uppercase">Footer Content</h5>
-			  <p>Here you can use rows and columns to organize your footer content.</p>
-	  
-			</div>
-			<!-- Grid column -->
-	  
-			<hr class="clearfix w-100 d-md-none pb-3">
-	  
-			<!-- Grid column -->
-			<div class="col-md-3 mb-md-0 mb-3">
-	  
-			  <!-- Links -->
-			  <h5 class="text-uppercase">Links</h5>
-	  
-			  <ul class="list-unstyled">
-				<li>
-				  <a href="#!">Link 1</a>
-				</li>
-				<li>
-				  <a href="#!">Link 2</a>
-				</li>
-				<li>
-				  <a href="#!">Link 3</a>
-				</li>
-				<li>
-				  <a href="#!">Link 4</a>
-				</li>
-			  </ul>
-	  
-			</div>
-			<!-- Grid column -->
-	  
-			<!-- Grid column -->
-			<div class="col-md-3 mb-md-0 mb-3">
-	  
-			  <!-- Links -->
-			  <h5 class="text-uppercase">Links</h5>
-	  
-			  <ul class="list-unstyled">
-				<li>
-				  <a href="#!">Link 1</a>
-				</li>
-				<li>
-				  <a href="#!">Link 2</a>
-				</li>
-				<li>
-				  <a href="#!">Link 3</a>
-				</li>
-				<li>
-				  <a href="#!">Link 4</a>
-				</li>
-			  </ul>
-	  
-			</div>
-			<!-- Grid column -->
-	  
-		  </div>
-		  <!-- Grid row -->
-	  
-		</div>
-		<!-- Footer Links -->
-	  
-		<!-- Copyright -->
-		<div class="footer-copyright text-center py-3">© 2018 Copyright:
-		  <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-		</div>
-		<!-- Copyright -->
-	  
-	  </footer>
-	  <!-- Footer -->
+	  $('button').click(function() {
+		$(this).parent().append('<p>Another paragraph</p>');
+		bumpIt();
+	  });
+</script>
+</html>

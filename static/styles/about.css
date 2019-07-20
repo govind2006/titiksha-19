@@ -213,6 +213,14 @@ section
 	width: 100%;
 	height: 676px;
 }
+
+@media only screen and (max-width:568px) {
+	.super_container{
+		padding-bottom:100px;
+	}
+  }
+
+
 .prlx_parent
 {
 	overflow: hidden;

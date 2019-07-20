@@ -214,10 +214,13 @@ section
 	height: 676px;
 }
 
-@media only screen and (max-width:568px) {
+@media only screen and (max-width:676px) {
 	.super_container{
-		padding-bottom:100px;
+		margin-bottom:500px;
+		height:700px;
 	}
+
+
   }
 
 

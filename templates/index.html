@@ -39,7 +39,7 @@
 			text-align: center;
 		  }
 
-		  div scrollmenu2 {
+		  div .scrollmenu2 {
 			top: 160px;
 			width: 2000px;
   			height: 10px;
@@ -47,6 +47,14 @@
   			-webkit-animation: mymove 2000s infinite;
   			animation: mymove 30s infinite;
 		  }
+		  @media only screen and (max-width:768px) {
+			body > div .scrollmenu2 {
+				height:100px;
+				position:absolute;
+				animation: none;
+			}
+		}
+		
 		  @-webkit-keyframes mymove {
 			from {right: 0px;}
 			to {right: 2000px;}

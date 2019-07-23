@@ -22,18 +22,22 @@
 
 <link rel="stylesheet" type="text/css" href="{% static 'styles/about_responsive.css' %}">
 
-		<style type="text/css">
+		<style>
+			.zoomin
+			{
+				text-align:center;
+			}
 			.zoomin #ph {
 				height: 355px;
-				width: 345px;
+				width: 300px;
 				-webkit-transition: all 1s ease;
 					 -moz-transition: all 1s ease;
 						-ms-transition: all 1s ease;
 								transition: all 1s ease;
 			}
 			.zoomin #ph:hover {
-				width: 450px;
-				height: 450px;
+				width: 400px;
+				height: 400px;
 			}
 			</style>
 </head>
@@ -154,8 +158,8 @@
 				</font>
 			</h4>
 			</section>
-				<div class="zoomin col text-center"
-				class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+				<div class="zoomin" class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+
 					<img id="ph" class="zoom" src="{% static 'images/1.jpg' %}" >
 					<img id="ph" class="zoom" src="{% static 'images/2.jpg' %}" >
 					<img id="ph" class="zoom" src="{% static 'images/3.jpg' %}" >

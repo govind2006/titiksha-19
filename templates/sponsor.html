@@ -6,72 +6,61 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<style>
-			
-			  .footer {
-				position: absolute;
-				bottom: 0;
+			.popup-gallery {
+				display: block;
+				width: 450px;
+				height: 450px;
+			}
+			  .popup-gallery a img {
 				width: 100%;
-			
-			  }
+				}
+			  
 	</style>
 </head>
-<body>
-			  
-			  <footer class="footer">
-				
-<section style="background-color:rgb(54, 63, 66)">
-		<div class="container">
-				<div class="row">										
-				<div class="col text-center">
-					<div class="section_title"><font color="red"><h2>
-						Shri Mata Vaishno Devi University</h2></font>
-					</div>				</div>
+<body class="container">
+		<div class="gallery">
+				<div class="container">
+				  <div class="row">
+					<div class="col-sm-12">
+					  <div class="popup-gallery">
+						  <a href="http://sandbox.vciwork.com/codepenstuff/images/1.jpg" class="image" >
+							<img src="http://sandbox.vciwork.com/codepenstuff/images/1.jpg">
+						  </a>
+					  </div>
+					</div>
+				  </div>
 				</div>
-				<div class="col text-center">			
-					<div class="owl-item text-center">
-						<div class="testimonial">Katra,Jammu & Kashmir,182320</div>
-					<body>
-							<ul class="col text-center">
-									<font size="4">
-								<a id="qw" href="https://www.facebook.com/Titksha.smvdu/">
-										<i class="fa fa-facebook"></i></a>
-								<a id="qw" href="mailto:titiksha@smvdu.ac.in">
-								<i class="fa fa-google-plus"></i></a>
-									<a id="qw" href="https://www.instagram.com/titiksha_smvdu/">
-								<i class="fa fa-instagram"></i></a>
-								</font>
-							</ul>
-						</body>
-					</div>
-					</div>
-		</div>
-
-	</section>
-			  </footer>
-
-
+			  </div>
+	<script>
+			jQuery(document).ready(function() {
+				jQuery('.popup-gallery').magnificPopup({
+					delegate: 'a',
+					type: 'image',
+				callbacks: {
+				  elementParse: function(item) {
+					console.log(item.el.context.className);
+					if(item.el.context.className == 'video') {					  
+					} 
+					else {
+					   item.type = 'image',
+					   item.tLoading = 'Loading image #%curr%...',
+					   item.mainClass = 'mfp-img-mobile',
+					   item.image = {
+						 tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+					   }
+					}
+		
+				  }
+				},
+					gallery: {
+						enabled: true,
+						navigateByImgClick: true,
+						preload: [0,1] 
+					}
+				
+				});
+		  
+			});
+	</script>
 </body>
-<script>
-		var bumpIt = function() {
-			$('body').css('margin-bottom', $('.footer').height());
-		  },
-		  didResize = false;
-	  
-	  bumpIt();
-	  
-	  $(window).resize(function() {
-		didResize = true;
-	  });
-	  setInterval(function() {
-		if(didResize) {
-		  didResize = false;
-		  bumpIt();
-		}
-	  }, 250);
-	  
-	  $('button').click(function() {
-		$(this).parent().append('<p>Another paragraph</p>');
-		bumpIt();
-	  });
-</script>
 </html>

@@ -54,7 +54,7 @@ git push -u origin feature
 ## How to update your local master branch
 * First of all add upstream remote. You can add upstream like
 ```bash
-git remote upstream add https://github.com/govind2006/titiksha-19.git
+git remote add upstream https://github.com/govind2006/titiksha-19.git
 ```
 * Now fetch the updated master branch
 ```bash
@@ -64,6 +64,8 @@ git fetch upstream
 ```bash
 git merge upstream/master
 ```
+* If there is any other query related to how to update local master branch kindly check this link --> https://digitaldrummerj.me/git-syncing-fork-with-original-repo/ 
+
 
 
 

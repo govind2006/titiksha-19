@@ -7,7 +7,11 @@ Backend  -> Django
 Database -> Sqlite  
 
 # How to Get Started
-* First create a virtual .env
+* Fork the Repo
+```bash
+git clone https://github.com/yourusername/titiksha-19.git
+```
+* create a virtual .env
 ```bash
 virtualenv .env
 ```
@@ -29,4 +33,37 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-# You will see a website running on port 8000.
+### You will see a website running on port 8000.
+
+# Contribution Guidelines
+1. Don't push your code from the master
+1. Create seperate branch for adding the feature. You can create seperate branch like
+```bash
+git branch feature
+```
+3. Checkout into that branch by running below command
+```bash
+git checkout -b feature
+```
+4. Now you can modify code as you want. After adding the feature push your code to github
+```bash
+git push -u origin feature
+```
+5. After pushing go to github and create pull request.
+
+## How to update your local master branch
+* First of all add upstream remote. You can add upstream like
+```bash
+git remote upstream add https://github.com/govind2006/titiksha-19.git
+```
+* Now fetch the updated master branch
+```bash
+git fetch upstream
+```
+* Now merge fetch code to your local branch master
+```bash
+git merge upstream/master
+```
+
+
+

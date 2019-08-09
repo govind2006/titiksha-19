@@ -1,752 +1,649 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Titiksha'19</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
-<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'social.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'team.css' %}">
-<link rel="shortcut icon" type="image/jpg" href="{% static 'images/flogo.jpg' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/about.css' %}">
+    <title>Titiksha'19</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+    <link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'social.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'team.css' %}">
+    <link rel="shortcut icon" type="image/jpg" href="{% static 'images/flogo.jpg' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/about.css' %}">
 
-<link rel="stylesheet" type="text/css" href="{% static 'styles/about_responsive.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/about_responsive.css' %}">
 
-<style>
-		
-		body{
-			
-						background: #00c6ff;
-		}
-</style>
+    <style>
+        body {
+            background: #00c6ff;
+        }
+    </style>
 </head>
+
 <body>
-<div class="super_container">
-    
-	<!-- Header -->
+    <div class="super_container">
 
-	<header class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="header_content d-flex flex-row align-items-center justify-content-start">
-						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
-							<div class="logo"><a href="/"><h2>Titiksha'19</h2></a></div>
-										<nav class="main_nav">
-											<ul class="d-flex flex-row align-items-start justify-content-start">
-												<li><a href="/">Home</a></li>
-												<li><a href="team.html">Our Team</a></li>
-												<li><a href="gallery.html">Gallery</a></li>
-												<li><a href="news.html">Events</a></li>
-												<li><a href="titiksha18.html">History</a></li>
-												<li><a href="contact.html">Contact Us</a></li>
-												<li><a href="http://icrtaet.smvdu.ac.in/" target="_blank">Icrtaet</a></li>
-												<li><a href="/account">Profile</a></li>
-											
-										</ul>
-										</nav>
-										
-							<!-- Hamburger -->
-	
-							<div class="hamburger ml-auto">
-								<i class="fa fa-bars" aria-hidden="true"></i>
-							</div>
-	
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	
-	<!-- Menu -->
-	
-	<div class="menu">
-		<div class="menu_header d-flex flex-row align-items-center justify-content-start">
-			<div class="menu_logo"><a href="/">Titiksha'19</a></div>
-			<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
-		</div>
-		<div class="menu_content">
-			<ul>
-				<br><br><br><br>
-				<li><a href="/">Home</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="news.html">Events</a></li>
-				<li><a href="team.html">Our Team</a></li>
-				<li><a href="titiksha18.html">History</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-				<li><a href="http://icrtaet.smvdu.ac.in/" target="_blank">Icrtaet</a></li>
-				<li><a href="/account">Profile</a></li>
-		</ul>
-		</div>
-		
-	</div>
+        <!-- Header -->
 
-    <br><br><br><br>
-<!--team start-->
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                            <div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+                                <div class="logo">
+                                    <a href="/">
+                                        <h2>Titiksha'19</h2>
+                                    </a>
+                                </div>
+                                <nav class="main_nav">
+                                    <ul class="d-flex flex-row align-items-start justify-content-start">
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="team.html">Our Team</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li><a href="news.html">Events</a></li>
+                                        <li><a href="titiksha18.html">History</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="http://icrtaet.smvdu.ac.in/" target="_blank">Icrtaet</a></li>
+                                        <li><a href="/account">Profile</a></li>
+
+                                    </ul>
+                                </nav>
+
+                                <!-- Hamburger -->
+
+                                <div class="hamburger ml-auto">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Menu -->
+
+        <div class="menu">
+            <div class="menu_header d-flex flex-row align-items-center justify-content-start">
+                <div class="menu_logo"><a href="/">Titiksha'19</a></div>
+                <div class="menu_close_container ml-auto">
+                    <div class="menu_close">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_content">
+                <ul>
+                    <br><br><br><br>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="news.html">Events</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="titiksha18.html">History</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="http://icrtaet.smvdu.ac.in/" target="_blank">Icrtaet</a></li>
+                    <li><a href="/account">Profile</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <br><br><br><br>
+        <!--team start-->
 
 
-<div class="demo">
-	<div class="container">
-					<div class="col text-center main">
-						<h1 class="main-heading">
-							<span class="main-heading-primary">TEAM MEMBERS</span>
-							<span class="main-heading-secondary">TITKSHA 2019 </span>
-						</h1>
-						
-			</div>
+        <div class="demo">
+            <div class="container">
+                <div class="col text-center main">
+                    <h1 class="main-heading">
+                        <span class="main-heading-primary">TEAM MEMBERS</span>
+                        <span class="main-heading-secondary">TITKSHA 2019 </span>
+                    </h1>
 
-			<div class="btn-container">
-				<a href="#" class="btn">
-					<span class="text">
+                </div>
+
+                <div class="btn-container">
+                    <a href="#" class="btn">
+                        <span class="text">
 						ACTIVE MEMBERS
 					</span>
-			</a>
-				</div>
-						
-				<div class="row">
-					
-					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-6">
-						<div class="our-team">
-							<div class="pic">
-								<img src="{% static 'images/manav4.jpg' %}" alt=""/>
-								<ul class="social">
-									<li><a href="https://www.facebook.com/mav.hgnis"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="https://twitter.com/mrmanavsingh"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="https://www.instagram.com/mr.manavsingh/?hl=en"><i class="fa fa-instagram"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/manav-singh-922307169/"><i class="fa fa-linkedin"></i></a></li>
-								</ul>
-							</div>
-							<div class="team-content">
-								<h3 class="title">Manav Singh</h3>
-								<small class="post">+91 8800372870</small>
-								<small>Email: <b>17BME021@smvdu.ac.in</b></small>
-							</div>
-							<div class="team-layer">
-								<a class="title">Manav Singh</a>
-								<span class="post">+91 8800372870</span>
-							</div>
-						</div>
-					</div>
-	
-					<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-						<div class="our-team">
-							<div class="pic">
-								<img src="{% static 'images/govind.jpg' %}" alt=""/>
-								<ul class="social">
-									<li><a href="https://www.facebook.com/govind.kumar.singh7528"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="https://twitter.com/govind_kumar__?s=09"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="https://www.instagram.com/govind_kumar__/?hl=en"><i class="fa fa-instagram"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/govind-kumar-0746a116a/"><i class="fa fa-linkedin"></i></a></li>
-								</ul>
-							</div>
-							<div class="team-content">
-								<h3 class="title">Govind Kumar</h3>
-								<small class="post">+91 9858363271</small>
-								<small>Email: <b>17BCS022@smvdu.ac.in</b></small>
-							</div>
-							<div class="team-layer">
-								<h3 class="title">Govind Kumar</h3>
-								<small class="post">+91 9858363271</small>
-							</div>
-						</div>
-					</div>
+                    </a>
+                </div>
 
-				</div>
+                <div class="row">
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/manav4.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/mav.hgnis"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/mrmanavsingh"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/mr.manavsingh/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/manav-singh-922307169/"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Manav Singh</h3>
+                                <small class="post">+91 8800372870</small>
+                                <small>Email: <b>17BME021@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <a class="title">Manav Singh</a>
+                                <span class="post">+91 8800372870</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/govind.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/govind.kumar.singh7528"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/govind_kumar__?s=09"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/govind_kumar__/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/govind-kumar-0746a116a/"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Govind Kumar</h3>
+                                <small class="post">+91 9858363271</small>
+                                <small>Email: <b>17BCS022@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">Govind Kumar</h3>
+                                <small class="post">+91 9858363271</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
 
 
-			<div class="btn-container">
-					<a href="#" class="btn">
-						<span class="text">
+                <div class="btn-container">
+                    <a href="#" class="btn">
+                        <span class="text">
 							CORE committee
 						</span>
-				</a>
-					</div>
-							
-					<div class="row">
-						
-							<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-									<div class="our-team">
-										<div class="pic">
-											<img src="{% static 'images/17bec001.jpg' %}" alt=""/>
-											<ul class="social">
-													<li><a href="https://www.linkedin.com/in/aakanksha-gupta-498914162/"><i class="fa fa-linkedin"></i></a></li>
-													<li><a href="https://www.linkedin.com/in/aakanksha-gupta-498914162/"><i class="fa fa-linkedin"></i></a></li>
-													<li><a href="https://www.linkedin.com/in/aakanksha-gupta-498914162/"><i class="fa fa-linkedin"></i></a></li>
-													<li><a href="https://www.linkedin.com/in/aakanksha-gupta-498914162/"><i class="fa fa-linkedin"></i></a></li>
-											</ul>
-										</div>
-										<div class="team-content">
-											<h3 class="title">AAKANKSHA GUPTA</h3>
-											<small class="post">17BEC001</small>
-											<small>Email: <b>17BEC001@smvdu.ac.in</b></small>
-										</div>
-										<div class="team-layer">
-											<h3 class="title">AAKANKSHA GUPTA</h3>
-											<span class="post">17BEC001</span>
-										</div>
-									</div>
-								</div>
+                    </a>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec001.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://www.linkedin.com/in/aakanksha-gupta-498914162/"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/aakanksha-gupta-498914162/"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/aakanksha-gupta-498914162/"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/aakanksha-gupta-498914162/"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">AAKANKSHA GUPTA</h3>
+                                <small class="post">17BEC001</small>
+                                <small>Email: <b>17BEC001@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">AAKANKSHA GUPTA</h3>
+                                <span class="post">17BEC001</span>
+                            </div>
+                        </div>
+                    </div>
 
 
-								<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-										<div class="our-team">
-											<div class="pic">
-												<img src="{% static 'images/17bec0101.jpg' %}" alt=""/>
-												<ul class="social">
-														<li><a href="https://www.facebook.com/mahajanaryan0110"><i class="fa fa-facebook"></i></a></li>
-														<li><a href="https://twitter.com/AryanMa56170078"><i class="fa fa-twitter"></i></a></li>
-														<li><a href="https://www.instagram.com/aryan_m3210/"><i class="fa fa-instagram"></i></a></li>
-														<li><a href="https://www.linkedin.com/in/aryan-mahajan-664626172/"><i class="fa fa-linkedin"></i></a></li>
-												</ul>
-											</div>
-											<div class="team-content">
-												<h3 class="title">ARYAN MAHAJAN</h3>
-												<small class="post">17BEC010</small>
-												<small>Email: <b>17BEC010@smvdu.ac.in</b></small>
-											</div>
-											<div class="team-layer">
-												<h3 class="title">ARYAN MAHAJAN</h3>
-												<span class="post">17BEC010</span>
-											</div>
-										</div>
-									</div>
-		
-
-									<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-											<div class="our-team">
-												<div class="pic">
-													<img src="{% static 'images/17bec0101.jpg' %}" alt=""/>
-													<ul class="social">
-															<li><a href="https://www.facebook.com/mahajanaryan0110"><i class="fa fa-facebook"></i></a></li>
-															<li><a href="https://twitter.com/AryanMa56170078"><i class="fa fa-twitter"></i></a></li>
-															<li><a href="https://www.instagram.com/aryan_m3210/"><i class="fa fa-instagram"></i></a></li>
-															<li><a href="https://www.linkedin.com/in/aryan-mahajan-664626172/"><i class="fa fa-linkedin"></i></a></li>
-													</ul>
-												</div>
-												<div class="team-content">
-													<h3 class="title">ARYAN MAHAJAN</h3>
-													<small class="post">17BEC010</small>
-													<small>Email: <b>17BEC010@smvdu.ac.in</b></small>
-												</div>
-												<div class="team-layer">
-													<h3 class="title">ARYAN MAHAJAN</h3>
-													<span class="post">17BEC010</span>
-												</div>
-											</div>
-										</div>
-
-									
-						
-					</div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec0101.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/mahajanaryan0110"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/AryanMa56170078"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/aryan_m3210/"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/aryan-mahajan-664626172/"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">ARYAN MAHAJAN</h3>
+                                <small class="post">17BEC010</small>
+                                <small>Email: <b>17BEC010@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">ARYAN MAHAJAN</h3>
+                                <span class="post">17BEC010</span>
+                            </div>
+                        </div>
+                    </div>
 
 
-					<div class="btn-container">
-						<a href="#" class="btn">
-							<span class="text">
+
+
+
+
+                </div>
+
+
+                <div class="btn-container">
+                    <a href="#" class="btn">
+                        <span class="text">
 								EVENT HEADS
 							</span>
-						</a>
-					</div>
-		
-				
-					<div class="row">
-		   
-		
-							<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-									<div class="our-team">
-										<div class="pic">
-											<img src="{% static 'images/17bec032.jpg' %}" alt=""/>
-											<ul class="social">
-													<li><a href="https://www.facebook.com/saqib.malik.3110"><i class="fa fa-facebook"></i></a></li>
-													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-													<li><a href="https://www.instagram.com/saqibmanan6/?hl=en"><i class="fa fa-instagram"></i></a></li>
-													<li><a href="https://www.linkedin.com/in/saqib-manan-007a9415a/"><i class="fa fa-linkedin"></i></a></li>
-											</ul>
-										</div>
-										<div class="team-content">
-											<h3 class="title">MOHAMMAD SAQIB</h3>
-											<small class="post">17BEC032</small>
-											<small>Email: <b>17BEC032@smvdu.ac.in</b></small>
-										</div>
-										<div class="team-layer">
-											<h3 class="title">MOHAMMAD SAQIB</h3>
-											<span class="post">17BEC032</span>
-										</div>
-									</div>
-								</div>
-		
-								<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-										<div class="our-team">
-											<div class="pic">
-												<img src="{% static 'images/17bec033.jpg' %}" alt=""/>
-												<ul class="social">
-														<li><a href="https://www.linkedin.com/in/mohammad-waqas-118603149"><i class="fa fa-linkedin"></i></a></li>
-														<li><a href="https://www.linkedin.com/in/mohammad-waqas-118603149"><i class="fa fa-linkedin"></i></a></li>
-														<li><a href="https://www.linkedin.com/in/mohammad-waqas-118603149"><i class="fa fa-linkedin"></i></a></li>
-														<li><a href="https://www.linkedin.com/in/mohammad-waqas-118603149"><i class="fa fa-linkedin"></i></a></li>
-												</ul>
-											</div>
-											<div class="team-content">
-												<h3 class="title">MOHAMMAD WAQAS</h3>
-												<small class="post">17BEC033</small>
-												<small>Email: <b>17BEC033@smvdu.ac.in</b></small>
-											</div>
-											<div class="team-layer">
-												<h3 class="title">MOHAMMAD WAQAS</h3>
-												<span class="post">17BEC033</span>
-											</div>
-										</div>
-									</div>
-		
-									<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-											<div class="our-team">
-												<div class="pic">
-													<img src="{% static 'images/17bec043.jpg' %}" alt=""/>
-													<ul class="social">
-															<li><a href="https://m.facebook.com/rajeev.singhaniya.714"><i class="fa fa-facebook"></i></a></li>
-															<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-															<li><a href="https://www.instagram.com/rajeev123579/"><i class="fa fa-instagram"></i></a></li>
-															<li><a href="https://www.linkedin.com/in/rajeev-kumar-05960117b"><i class="fa fa-linkedin"></i></a></li>
-													</ul>
-												</div>
-												<div class="team-content">
-													<h3 class="title">RAJEEV KUMAR</h3>
-													<small class="post">17BEC043</small>
-													<small>Email: <b>17BEC043@smvdu.ac.in</b></small>
-												</div>
-												<div class="team-layer">
-													<h3 class="title">RAJEEV KUMAR</h3>
-													<span class="post">17BEC043</span>
-												</div>
-											</div>
-										</div>
-		
-		
-		</div>
-		
-		
-		<div class="btn-container">
-			<a href="#" class="btn">
-				<span class="text">
-					FINANACE committee
+                    </a>
+                </div>
+
+
+                <div class="row">
+
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec032.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/saqib.malik.3110"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/saqibmanan6/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/saqib-manan-007a9415a/"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">MOHAMMAD SAQIB</h3>
+                                <small class="post">17BEC032</small>
+                                <small>Email: <b>17BEC032@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">MOHAMMAD SAQIB</h3>
+                                <span class="post">17BEC032</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec033.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://www.linkedin.com/in/mohammad-waqas-118603149"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/mohammad-waqas-118603149"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/mohammad-waqas-118603149"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/mohammad-waqas-118603149"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">MOHAMMAD WAQAS</h3>
+                                <small class="post">17BEC033</small>
+                                <small>Email: <b>17BEC033@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">MOHAMMAD WAQAS</h3>
+                                <span class="post">17BEC033</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec043.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://m.facebook.com/rajeev.singhaniya.714"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/rajeev123579/"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/rajeev-kumar-05960117b"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">RAJEEV KUMAR</h3>
+                                <small class="post">17BEC043</small>
+                                <small>Email: <b>17BEC043@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">RAJEEV KUMAR</h3>
+                                <span class="post">17BEC043</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="btn-container">
+                    <a href="#" class="btn">
+                        <span class="text">
+					FINANACE COMMITTEE
 				</span>
-			</a>
-		</div>
-		
-		
-		<div class="row">
-		
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-			<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/17bec028.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="https://m.facebook.com/luvish.gupta"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="http://m.instagram.com/luvish.gupta"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">LUVISH GUPTA</h3>
-						<small class="post">17BEC028</small>
-						<small>Email: <b>17BEC028@smvdu.ac.in</b></small>
-					</div>
-					<div class="team-layer">
-							<h3 class="title">LUVISH GUPTA</h3>
-						<span class="post">17BEC028</span>
-					</div>
-				</div>
-			</div>
+                    </a>
+                </div>
 
-			
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/17bec037.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="https://www.instagram.com/_naman_16/?hl=en"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">NAMAN GUPTA</h3>
-						<small class="post">17BEC037</small>
-						<small>Email: <b>17BEC037@smvdu.ac.in</b></small>
-					</div>
-					<div class="team-layer">
-					<h3 class="title">NAMAN GUPTA</h3>
-						<span class="post">17BEC037</span>
-					</div>
-				</div>
-			</div>
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/s2.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">Steve Thomas</h3>
-						<small class="post">web developer</small>
-						<small>Email: <b>mail@example.com</b></small>
-					</div>
-					<div class="team-layer">
-						<a href="#">Steve Thomas</a>
-						<span class="post">web developer</span>
-					</div>
-				</div>
-			</div>
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/s2.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">Miranda joy</h3>
-						<small class="post">Web Designer</small>
-						<small>Email: <b>mail@example.com</b></small>
-					</div>
-					<div class="team-layer">
-						<a href="#">Miranda joy</a>
-						<span class="post">Web Designer</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="btn-container">
-			<a href="#" class="btn">
-				<span class="text">
-					DECORATION committee
+
+                <div class="row">
+
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec028.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://m.facebook.com/luvish.gupta"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="http://m.instagram.com/luvish.gupta"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">LUVISH GUPTA</h3>
+                                <small class="post">17BEC028</small>
+                                <small>Email: <b>17BEC028@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">LUVISH GUPTA</h3>
+                                <span class="post">17BEC028</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec037.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/_naman_16/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">NAMAN GUPTA</h3>
+                                <small class="post">17BEC037</small>
+                                <small>Email: <b>17BEC037@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">NAMAN GUPTA</h3>
+                                <span class="post">17BEC037</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="btn-container">
+                    <a href="#" class="btn">
+                        <span class="text">
+					DECORATION COMMITTEE
 				</span>
-			</a>
-		</div>
-		
-		
-		<div class="row">
-		
-		
-				<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-		
-		
-						<div class="our-team">
-							<div class="pic">
-								<img src="{% static 'images/s2.jpg' %}" alt="" />
-								<ul class="social">
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-								</ul>
-							</div>
-							<div class="team-content">
-								<h3 class="title">ASKANDHA SHARMA</h3>
-								<small class="post">17BEC013</small>
-								<small>Email: <b>17BEC013@smvdu.ac.in</b></small>
-							</div>
-							<div class="team-layer">
-									<h3 class="title">ASKANDHA SHARMA</h3>
-								<span class="post">17BEC013</span>
-							</div>
-						</div>
-					</div>
-		
-					<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-		
-		
-							<div class="our-team">
-								<div class="pic">
-									<img src="{% static 'images/17bec020.jpg' %}" alt="" />
-									<ul class="social">
-									<li><a href="https://www.linkedin.com/in/garima-ghai-3879a1184"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="https://www.linkedin.com/in/garima-ghai-3879a1184"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="https://www.linkedin.com/in/garima-ghai-3879a1184"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="https://www.linkedin.com/in/garima-ghai-3879a1184"><i class="fa fa-linkedin"></i></a></li>
-									</ul>
-								</div>
-								<div class="team-content">
-									<h3 class="title">GARIMA GHAI</h3>
-									<small class="post">17BEC020</small>
-									<small>Email: <b>17BEC020@smvdu.ac.in</b></small>
-								</div>
-								<div class="team-layer">
-										<h3 class="title">GARIMA GHAI</h3>
-									<span class="post">17BEC020</span>
-								</div>
-							</div>
-						</div>
+                    </a>
+                </div>
 
 
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/17bec053.jpg' %}" alt="" />
-						<ul class="social">
-								<li><a href="https://www.linkedin.com/in/shriya-717019185"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/shriya-717019185"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/shriya-717019185"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/shriya-717019185"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">SHRIYA</h3>
-						<small class="post">17BEC053</small>
-						<small>Email: <b>17BEC053@smvdu.ac.in</b></small>
-					</div>
-					<div class="team-layer">
-							<h3 class="title">SHRIYA</h3>
-						<span class="post">17BEC053</span>
-					</div>
-				</div>
-			</div>
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/17bec064.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="https://m.facebook.com/?_rdr"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="https://instagram.com/vim4rsh?igshid=6saxr8l5jf22"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/vimarsh-koul-a55833184"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">VIMARSH KOUL</h3>
-						<small class="post">17BEC064</small>
-						<small>Email: <b>17BEC064@smvdu.ac.in</b></small>
-					</div>
-					<div class="team-layer">
-						<h3 class="title">VIMARSH KOUL</h3>
-						<span class="post">17BEC064</span>
-					</div>
-				</div>
-			</div>
+                <div class="row">
 
 
-		</div>
-		
-		<div class="btn-container">
-			<a href="#" class="btn">
-				<span class="text">
-					HOSPITALITY committee
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+
+
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/s2.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">ASKANDHA SHARMA</h3>
+                                <small class="post">17BEC013</small>
+                                <small>Email: <b>17BEC013@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">ASKANDHA SHARMA</h3>
+                                <span class="post">17BEC013</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+
+
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec020.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://www.linkedin.com/in/garima-ghai-3879a1184"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/garima-ghai-3879a1184"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/garima-ghai-3879a1184"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/garima-ghai-3879a1184"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">GARIMA GHAI</h3>
+                                <small class="post">17BEC020</small>
+                                <small>Email: <b>17BEC020@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">GARIMA GHAI</h3>
+                                <span class="post">17BEC020</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec053.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://www.linkedin.com/in/shriya-717019185"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/shriya-717019185"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/shriya-717019185"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/shriya-717019185"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">SHRIYA</h3>
+                                <small class="post">17BEC053</small>
+                                <small>Email: <b>17BEC053@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">SHRIYA</h3>
+                                <span class="post">17BEC053</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec064.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://m.facebook.com/?_rdr"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://instagram.com/vim4rsh?igshid=6saxr8l5jf22"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/vimarsh-koul-a55833184"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">VIMARSH KOUL</h3>
+                                <small class="post">17BEC064</small>
+                                <small>Email: <b>17BEC064@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">VIMARSH KOUL</h3>
+                                <span class="post">17BEC064</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="btn-container">
+                    <a href="#" class="btn">
+                        <span class="text">
+					HOSPITALITY COMMITTEE   
 				</span>
-			</a>
-		</div>
-		
-		
-		<div class="row">
-		
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">		
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/17bec024.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="http://m.instagram.com/keshavmanhas0797"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">KESHAV KANT MANHAS</h3>
-						<small class="post">17BEC024</small>
-						<small>Email: <b>17bec024@smvdu</b></small>
-					</div>
-					<div class="team-layer">
-					<h3 class="title">KESHAV KANT MANHAS</h3>
-						<span class="post">17BEC024</span>
-					</div>
-				</div>
-			</div>
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/17bec027.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="https://www.facebook.com/profile.php?id=100010894099346"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="https://www.instagram.com/lokesh6762/?igshid=8yys91ar4qk8"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/lokesh-sharma-80528418a"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">LOKESH SHARMA</h3>
-						<small class="post">17BEC027</small>
-						<small>Email: <b>17BEC027@smvdu.ac.in</b></small>
-					</div>
-					<div class="team-layer">
-						<h3 class="title">LOKESH SHARMA</h3>
-						<span class="post">17BEC027</span>
-					</div>
-				</div>
-			</div>
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/17bec038.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="https://m.facebook.com/neelkamal.rajput.94?ref=bookmarks"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="https://twitter.com/Neel0510?s=09"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="https://www.instagram.com/neelk0510/?hl=en"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/neel-kamal-28884314a/"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">NEEL KAMAL</h3>
-						<small class="post">17BEC038</small>
-						<small>Email: <b>17BEC038@smvdu.ac.in</b></small>
-					</div>
-					<div class="team-layer">
-						<h3 class="title">NEEL KAMAL</h3>
-						<span class="post">17BEC038</span>
-					</div>
-				</div>
-			</div>
-		
-			
-		</div>
-		
-		<div class="btn-container">
-			<a href="#" class="btn">
-				<span class="text">
-					MEDIA AND PUBLICATION committee
-				</span>
-			</a>
-		</div>
-		
-		
-		<div class="row">
-		
-		
-				<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-						<div class="our-team">
-							<div class="pic">
-								<img src="{% static 'images/shkuriti.jpeg' %}" alt="" />
-								<ul class="social">
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-								</ul>
-							</div>
-							<div class="team-content">
-								<h3 class="title">sukriti Gupta</h3>
-								<small class="post">17BEC057</small>
-								<small>Email: <b>17BEC057@smvdu.ac.in</b></small>
-							</div>
-							<div class="team-layer">
-								<h3 class="title">Sukriti Gupta</h3>
-								<span class="post">17BEC057</span>
-							</div>
-						</div>
-					</div>
-	
-					<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-						<div class="our-team">
-							<div class="pic">
-								<img src="{% static 'images/parul3.jpg' %}" alt=""/>
-								<ul class="social">
-								<li><a href="https://www.linkedin.com/in/parul-priyedarshani-986b67179"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/parul-priyedarshani-986b67179"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/parul-priyedarshani-986b67179"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/parul-priyedarshani-986b67179"><i class="fa fa-linkedin"></i></a></li>
-								</ul>
-							</div>
-							<div class="team-content">
-								<h3 class="title">Parul Priyedarshani</h3>
-								<small class="post">17BCS037</small>
-								<small>Email: <b>17BCS037@smvdu.ac.in</b></small>
-							</div>
-							<div class="team-layer">
-								<h3 class="title">Parul Priyedarshani</h3>
-								<span class="post">17BCS037</span>
-							</div>
-						</div>
-					</div>
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/s2.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">Steve Thomas</h3>
-						<small class="post">web developer</small>
-						<small>Email: <b>mail@example.com</b></small>
-					</div>
-					<div class="team-layer">
-						<a href="#">Steve Thomas</a>
-						<span class="post">web developer</span>
-					</div>
-				</div>
-			</div>
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/s2.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">Miranda joy</h3>
-						<small class="post">Web Designer</small>
-						<small>Email: <b>mail@example.com</b></small>
-					</div>
-					<div class="team-layer">
-						<a href="#">Miranda joy</a>
-						<span class="post">Web Designer</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		
+                    </a>
+                </div>
 
-		<!--
+
+                <div class="row">
+
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec024.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="http://m.instagram.com/keshavmanhas0797"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">KESHAV KANT MANHAS</h3>
+                                <small class="post">17BEC024</small>
+                                <small>Email: <b>17bec024@smvdu</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">KESHAV KANT MANHAS</h3>
+                                <span class="post">17BEC024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec027.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/profile.php?id=100010894099346"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/lokesh6762/?igshid=8yys91ar4qk8"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/lokesh-sharma-80528418a"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">LOKESH SHARMA</h3>
+                                <small class="post">17BEC027</small>
+                                <small>Email: <b>17BEC027@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">LOKESH SHARMA</h3>
+                                <span class="post">17BEC027</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec038.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://m.facebook.com/neelkamal.rajput.94?ref=bookmarks"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/Neel0510?s=09"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/neelk0510/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/neel-kamal-28884314a/"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">NEEL KAMAL</h3>
+                                <small class="post">17BEC038</small>
+                                <small>Email: <b>17BEC038@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">NEEL KAMAL</h3>
+                                <span class="post">17BEC038</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="btn-container">
+                    <a href="#" class="btn">
+                        <span class="text">
+					MEDIA AND PUBLICATION COMMITTEE
+				</span>
+                    </a>
+                </div>
+
+
+                <div class="row">
+
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/shkuriti.jpeg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">sukriti Gupta</h3>
+                                <small class="post">17BEC057</small>
+                                <small>Email: <b>17BEC057@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">Sukriti Gupta</h3>
+                                <span class="post">17BEC057</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/parul3.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://www.linkedin.com/in/parul-priyedarshani-986b67179"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/parul-priyedarshani-986b67179"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/parul-priyedarshani-986b67179"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/parul-priyedarshani-986b67179"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Parul Priyedarshani</h3>
+                                <small class="post">17BCS037</small>
+                                <small>Email: <b>17BCS037@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">Parul Priyedarshani</h3>
+                                <span class="post">17BCS037</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--
 		<div class="btn-container">
 			<a href="#" class="btn">
 				<span class="text">
@@ -855,305 +752,206 @@
 		</div>
 	-->
 
-		
-		<div class="btn-container">
-			<a href="#" class="btn">
-				<span class="text">
+
+                <div class="btn-container">
+                    <a href="#" class="btn">
+                        <span class="text">
 					HELP DESK
 				</span>
-			</a>
-		</div>
-		
-		
-		<div class="row">
-		
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/17bec016.jpg' %}" alt="" />
-						<ul class="social">
-								<li><a href="https://www.linkedin.com/in/deepali-sharma-320853184"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/deepali-sharma-320853184"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/deepali-sharma-320853184"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/deepali-sharma-320853184"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">DEEPALI SHARMA</h3>
-						<small class="post">17BEC016</small>
-						<small>Email: <b>17bec016@smvdu.ac.in</b></small>
-					</div>
-					<div class="team-layer">
-					<h3 class="title">DEEPALI SHARMA</h3>
-						<span class="post">17BEC016</span>
-					</div>
-				</div>
-			</div>
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/17BEC060.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="https://www.instagram.com/s_p_s3/"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">SURYA PRATAP SINGH</h3>
-						<small class="post">17BEC060</small>
-						<small>Email: <b>17bec060@smvdu.ac.in</b></small>
-					</div>
-					<div class="team-layer">
-					<h3 class="title">SURYA PRATAP SINGH</h3>
-						<span class="post">17BEC060</span>
-					</div>
-				</div>
-			</div>	
-			
-		</div>
-		
-		<div class="btn-container">
-			<a href="#" class="btn">
-				<span class="text">
-					TRANSPORTATION committee
-				</span>
-			</a>
-		</div>
-		
-		
-		<div class="row">
-		
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-		
-		
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/s2.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">Williamson</h3>
-						<small class="post">web developer</small>
-						<small>Email: <b>mail@example.com</b></small>
-					</div>
-					<div class="team-layer">
-						<a href="#">Williamson</a>
-						<span class="post">web developer</span>
-					</div>
-				</div>
-			</div>
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/s2.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">kristina</h3>
-						<small class="post">Web Designer</small>
-						<small>Email: <b>mail@example.com</b></small>
-					</div>
-					<div class="team-layer">
-						<a href="#">kristina</a>
-						<span class="post">Web Designer</span>
-					</div>
-				</div>
-			</div>
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/s2.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">Steve Thomas</h3>
-						<small class="post">web developer</small>
-						<small>Email: <b>mail@example.com</b></small>
-					</div>
-					<div class="team-layer">
-						<a href="#">Steve Thomas</a>
-						<span class="post">web developer</span>
-					</div>
-				</div>
-			</div>
-		
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-				<div class="our-team">
-					<div class="pic">
-						<img src="{% static 'images/s2.jpg' %}" alt="" />
-						<ul class="social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<div class="team-content">
-						<h3 class="title">Miranda joy</h3>
-						<small class="post">Web Designer</small>
-						<small>Email: <b>mail@example.com</b></small>
-					</div>
-					<div class="team-layer">
-						<a href="#">Miranda joy</a>
-						<span class="post">Web Designer</span>
-					</div>
-				</div>
-			</div>
-		</div>	
-		
+                    </a>
+                </div>
 
-		<div class="btn-container">
-				<a href="#" class="btn">
-					<span class="text">
-							TECHNICAL and STAGE Management
+
+                <div class="row">
+
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec016.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://www.linkedin.com/in/deepali-sharma-320853184"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/deepali-sharma-320853184"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/deepali-sharma-320853184"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/deepali-sharma-320853184"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">DEEPALI SHARMA</h3>
+                                <small class="post">17BEC016</small>
+                                <small>Email: <b>17bec016@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">DEEPALI SHARMA</h3>
+                                <span class="post">17BEC016</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17BEC060.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/s_p_s3/"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">SURYA PRATAP SINGH</h3>
+                                <small class="post">17BEC060</small>
+                                <small>Email: <b>17bec060@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">SURYA PRATAP SINGH</h3>
+                                <span class="post">17BEC060</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="btn-container">
+                    <a href="#" class="btn">
+                        <span class="text">
+							TECHNICAL AND STAGE MANAGEMENT
 					</span>
-				</a>
-			</div>
-			
-			
-			<div class="row">
-			
-			
-				<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-					<div class="our-team">
-						<div class="pic">
-							<img src="{% static 'images/17BEC017.jpg' %}" alt="" />
-							<ul class="social">
-								<li><a href="https://www.facebook.com/profile.php?id=100014598793462"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="https://www.instagram.com/digvijay5308/?hl=en"><i class="fa fa-instagram"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/digvijay-singh-b32799165"><i class="fa fa-linkedin"></i></a></li>
-							</ul>
-						</div>
-						<div class="team-content">
-							<h3 class="title">DIGVIJAY SINGH</h3>
-							<small class="post">17BEC017</small>
-							<small>Email: <b>17bec017@smvdu.ac.in</b></small>
-						</div>
-						<div class="team-layer">
-						<h3 class="title">DIGVIJAY SINGH</h3>
-							<span class="post">17BEC017</span>
-						</div>
-					</div>
-				</div>
-			
-				<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-					<div class="our-team">
-						<div class="pic">
-							<img src="{% static 'images/17BEC035.jpg' %}" alt="" />
-							<ul class="social">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-							</ul>
-						</div>
-						<div class="team-content">
-							<h3 class="title">MUSKAAN GUPTA</h3>
-							<small class="post">17BEC035</small>
-							<small>Email: <b>17BEC035@smvdu.ac.in</b></small>
-						</div>
-						<div class="team-layer">
-						<h3 class="title">MUSKAAN GUPTA</h3>
-							<span class="post">17BEC035</span>
-						</div>
-					</div>
-				</div>
-			
-				<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
-					<div class="our-team">
-						<div class="pic">
-							<img src="{% static 'images/17bec044.jpg' %}" alt="" />
-							<ul class="social">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="https://www.instagram.com/abrol_rakshit_/?hl=en"><i class="fa fa-instagram"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-							</ul>
-						</div>
-						<div class="team-content">
-							<h3 class="title">RAKSHIT ABROL</h3>
-							<small class="post">17BEC044</small>
-							<small>Email: <b>17BEC044@smvdu.ac.in</b></small>
-						</div>
-						<div class="team-layer">
-						<h3 class="title">RAKSHIT ABROL</h3>
-							<span class="post">17BEC044</span>
-						</div>
-					</div>
-				</div>
-			
-				
-			</div>
-		
-
-		</div>
-	</div>
-			
+                    </a>
+                </div>
 
 
-<section style="background-color:rgb(54, 63, 66)">
-		<div class="container">
-				<div class="row">										
-				<div class="col text-center">
-					<div class="section_title"><font color="red"><h2>
-						Shri Mata Vaishno Devi University</h2></font>
-					</div>				</div>
-				</div>
-				<div class="col text-center">			
-					<div class="owl-item text-center">
-						<div class="testimonial">Katra,Jammu & Kashmir,182320</div>
-					<body>
-							<ul class="col text-center">
-									<font size="6">
-								<a id="qw" href="https://www.facebook.com/Titksha.smvdu/">
-										<i class="fa fa-facebook"></i></a>
-								<a id="qw" href="mailto:titiksha@smvdu.ac.in">
-								<i class="fa fa-google-plus"></i></a>
-									<a id="qw" href="https://www.instagram.com/titiksha_smvdu/">
-								<i class="fa fa-instagram"></i></a>
-								</font>
-							</ul>
-						</body>
-					</div>
-					</div>
-		</div>
+                <div class="row">
 
-	</section>
 
-</div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17BEC017.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/profile.php?id=100014598793462"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/digvijay5308/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/digvijay-singh-b32799165"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">DIGVIJAY SINGH</h3>
+                                <small class="post">17BEC017</small>
+                                <small>Email: <b>17bec017@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">DIGVIJAY SINGH</h3>
+                                <span class="post">17BEC017</span>
+                            </div>
+                        </div>
+                    </div>
 
-<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
-<script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
-<script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
-<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
-<script src="{% static 'plugins/Isotope/isotope.pkgd.min.js' %}"></script>
-<script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js' %}"></script>
-<script src="{% static 'plugins/easing/easing.js' %}"></script>
-<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
-<script src="{% static 'js/custom.js' %}"></script>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17BEC035.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">MUSKAAN GUPTA</h3>
+                                <small class="post">17BEC035</small>
+                                <small>Email: <b>17BEC035@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">MUSKAAN GUPTA</h3>
+                                <span class="post">17BEC035</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="{% static 'images/17bec044.jpg' %}" alt="" />
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/abrol_rakshit_/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">RAKSHIT ABROL</h3>
+                                <small class="post">17BEC044</small>
+                                <small>Email: <b>17BEC044@smvdu.ac.in</b></small>
+                            </div>
+                            <div class="team-layer">
+                                <h3 class="title">RAKSHIT ABROL</h3>
+                                <span class="post">17BEC044</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <section style="background-color:white">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="section_title">
+                            <font color="red">
+                                <h2>
+                                    Shri Mata Vaishno Devi University</h2>
+                            </font>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="owl-item text-center">
+                        <div class="testimonial">Katra, Jammu & Kashmir ,182320</div>
+
+                        <body>
+                            <ul class="col text-center">
+                                <font size="7">
+                                    <a id="qw" href="https://www.facebook.com/Titksha.smvdu/">
+                                        <i class="fa fa-facebook"></i></a>
+                                    <a id="qw" href="mailto:titiksha@smvdu.ac.in">
+                                        <i class="fa fa-google-plus"></i></a>
+                                    <a id="qw" href="https://www.instagram.com/titiksha_smvdu/">
+                                        <i class="fa fa-instagram"></i></a>
+                                </font>
+                            </ul>
+                        </body>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
+    <script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
+    <script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+    <script src="{% static 'plugins/Isotope/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js' %}"></script>
+    <script src="{% static 'plugins/easing/easing.js' %}"></script>
+    <script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
 
 </body>
+
 </html>

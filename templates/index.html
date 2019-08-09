@@ -1,53 +1,52 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Titiksha'19</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
-<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static '1.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static '2.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/about.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/about_responsive.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'animation.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'social.css' %}">
-<link rel="shortcut icon" type="image/jpg" href="{% static 'images/flogo.jpg' %}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Titiksha'19</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+    <link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '1.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '2.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/about.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/about_responsive.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'animation.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'social.css' %}">
+    <link rel="shortcut icon" type="image/jpg" href="{% static 'images/flogo.jpg' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<style>
-	
-		canvas {
-			background: #0a0a0a;
-		  }
-
-		  .alert1 {
-			padding: 15px;
-			background-color: #870000;
-			color: white;
-		  }
-		  
-
-		  #myDiv {
-			display: none;
-			text-align: center;
-		  }
-
-		  div .scrollmenu2 {
-			top: 160px;
-			width: 2000px;
-  			height: 10px;
-  			position: relative;
-  			-webkit-animation: mymove 2000s infinite;
-  			animation: mymove 30s infinite;
-		  }
-		 /*
+    <style>
+        canvas {
+            background: #0a0a0a;
+        }
+        
+        .alert1 {
+            padding: 15px;
+            background-color: #870000;
+            color: white;
+        }
+        
+        #myDiv {
+            display: none;
+            text-align: center;
+        }
+        
+        div .scrollmenu2 {
+            top: 160px;
+            width: 2000px;
+            height: 10px;
+            position: relative;
+            -webkit-animation: mymove 2000s infinite;
+            animation: mymove 30s infinite;
+        }
+        /*
 		  @media only screen and (max-width:768px) {
 			body > div .scrollmenu2 {
 				height:100px;
@@ -56,777 +55,546 @@
 			}
 		}
 		*/
-		  @-webkit-keyframes mymove {
-			from {right: 0px;}
-			to {right: 2000px;}
-		  }
-
-		  @keyframes mymove {
-			from {right: 0px;}
-			to {right: 2000px;}
-		  }
-
-		  #ral{
-			position: absolute;
-			left: 980px;
-			width: 300px;
-			height: 520px;
-			border: 3px solid blue;
-			top: 18%;
-		  }
-
-		  #overlay {
-			position: fixed;
-			display: none;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: rgba(0,0,0,0.5);
-			z-index: 2;
-			cursor: pointer;
-		  }
-
-		  #text2{
-			position: absolute;
-			top: 35%;
-			left: 50%;
-			font-size: 50px;
-			color: red;
-			transform: translate(-50%,-50%);
-			-ms-transform: translate(-50%,-50%);
-		  }
-
-
-#team
-{
-  background: radial-gradient(#16222A, #3A6073);
-}
-
-
-/*set up the container to be responsive columns that push down to a single column layout*/
-.team-section{
-	margin:20px auto 80px;
-	display:grid;
-	/*minimum size  350px, maximum size 1fr of the viewport*/
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	grid-gap:10px;
-}
-
-.card{
-	z-index:0;
-	margin: 0 auto;
-	position:relative;
-	width:300px;
-	background-color:#333;
-	padding:20px;
-  
-	text-align:center;
-	box-shadow: 0 10px 40px rgba(0, 0, 0, .5);
-	overflow:hidden;
-}
-
-.layer{
-	z-index:1;
-	position:absolute; /*position away from .card & .content*/
-
-	top: calc(100% - 2px); /*pushes up the layer by 2px to appear as border-bottom on card by default*/
-	left:0;
-	width:100%;
-	height:100%;
-	background: linear-gradient(#43cea2, #185a9d);
-
-	transition:0.5s;/*sets up for animation*/
-}
-
-/*cursor for hovering over card*/
-.card:hover{
-	cursor:pointer;
-}
-/*when hovering over card, .layer will move up to the top of parent container .card */
-.card:hover .layer{
-	top:0;
-}
-
-.content{
-	z-index:3;
-	/*content is relative to parent card to allow text to appear on top of .Layer (absolute)*/
-	position:relative;
-}
-
-
-/*turn image holder into circle*/
-.content .image{
-	width:150px;
-	height:150px;
-	border-radius:50%;
-	overflow:hidden;
-	margin: 0 auto;
-	border:4px solid white;
-	box-shadow: 0 6px 20px rgba(0,0,0,.5);
-	margin-top:10px;
-	margin-bottom:50px;
-}
-
-/*move image to acknowledge click*/
-.image:active{
-	position:relative;
-	top:3px;
-}
-
-/*reduce size of image*/
-img{
-	width:150px;
-	height:150px;
-}
-
-/*style name and position title */
-.content .details h2{
-	font-size:1.2em;
-	color:white;
-	font-family:'sans-serif';
-}
-.content .details h2 span{
-	font-size:1em;
-	color:#2980b9;
-	font-weight:100;
-	transition:0.5s;
-}
-
-
-/*when hovering .card, change colour of text*/
-.card:hover .content h2 span{
-	color:white;
-}
-
-
-.butn {
-  border: 0;
-  outline: 0;
-  padding:0;
-  
-  background-image: none;
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px 25px;
-  margin-bottom:1em;
-  vertical-align: middle;
-  line-height: 1.6;
-  cursor: pointer;
-  text-align: center;
-  background-color: #333;
-  white-space: nowrap;
-  color: #fff;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: 0.2s ease;
-  position: relative;
-}
-.butn:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 2px solid #ccc;
-  transition: 0.3s;
-  visibility: hidden;
-  opacity: 0;
-}
-.butn:hover:before {
-  top: -6px;
-  left: -6px;
-  right: -6px;
-  bottom: -6px;
-  visibility: visible;
-  opacity: 1;
-}
-.butn.butn--dark {
-  min-width: 170px;
-  background-color: #242424;
-}
-.butn.butn--dark:before {
-  border-color: #242424;
-}
-.butn.butn--loading {
-  opacity: 0.5;
-}
-.butn.butn--loading:before {
-  top: -6px;
-  left: -6px;
-  right: -6px;
-  bottom: -6px;
-  opacity: 1;
-  visibility: visible;
-  -webkit-animation: loading-anim 1.5s infinite;
-          animation: loading-anim 1.5s infinite;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-}
-
-@-webkit-keyframes loading-anim {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes loading-anim {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-	
-#qwert
-{
-	font-family:'Times New Roman', Times, serif; 
-    font-size: 25px;
-	background-color: white;
-	text-align:left;
-	  color:black;
-	  font-style:italic;
-	  line-height: 30pt;
-}
-
-	</style>
+        
+        @-webkit-keyframes mymove {
+            from {
+                right: 0px;
+            }
+            to {
+                right: 2000px;
+            }
+        }
+        
+        @keyframes mymove {
+            from {
+                right: 0px;
+            }
+            to {
+                right: 2000px;
+            }
+        }
+        
+        #ral {
+            position: absolute;
+            left: 980px;
+            width: 300px;
+            height: 520px;
+            border: 3px solid blue;
+            top: 18%;
+        }
+        
+        #overlay {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            cursor: pointer;
+        }
+        
+        #text2 {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            font-size: 50px;
+            color: red;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+        
+        #team {
+            background: radial-gradient(#16222A, #3A6073);
+        }
+        /*set up the container to be responsive columns that push down to a single column layout*/
+        
+        .team-section {
+            margin: 20px auto 80px;
+            display: grid;
+            /*minimum size  350px, maximum size 1fr of the viewport*/
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-gap: 10px;
+        }
+        
+        .card {
+            z-index: 0;
+            margin: 0 auto;
+            position: relative;
+            width: 300px;
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, .5);
+            overflow: hidden;
+        }
+        
+        .layer {
+            z-index: 1;
+            position: absolute;
+            /*position away from .card & .content*/
+            top: calc(100% - 2px);
+            /*pushes up the layer by 2px to appear as border-bottom on card by default*/
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#43cea2, #185a9d);
+            transition: 0.5s;
+            /*sets up for animation*/
+        }
+        /*cursor for hovering over card*/
+        
+        .card:hover {
+            cursor: pointer;
+        }
+        /*when hovering over card, .layer will move up to the top of parent container .card */
+        
+        .card:hover .layer {
+            top: 0;
+        }
+        
+        .content {
+            z-index: 3;
+            /*content is relative to parent card to allow text to appear on top of .Layer (absolute)*/
+            position: relative;
+        }
+        /*turn image holder into circle*/
+        
+        .content .image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            border: 4px solid white;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, .5);
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+        /*move image to acknowledge click*/
+        
+        .image:active {
+            position: relative;
+            top: 3px;
+        }
+        /*reduce size of image*/
+        
+        img {
+            width: 150px;
+            height: 150px;
+        }
+        /*style name and position title */
+        
+        .content .details h2 {
+            font-size: 1.2em;
+            color: white;
+            font-family: 'sans-serif';
+        }
+        
+        .content .details h2 span {
+            font-size: 1em;
+            color: #2980b9;
+            font-weight: 100;
+            transition: 0.5s;
+        }
+        /*when hovering .card, change colour of text*/
+        
+        .card:hover .content h2 span {
+            color: white;
+        }
+        
+        .butn {
+            border: 0;
+            outline: 0;
+            padding: 0;
+            background-image: none;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 25px;
+            margin-bottom: 1em;
+            vertical-align: middle;
+            line-height: 1.6;
+            cursor: pointer;
+            text-align: center;
+            background-color: #333;
+            white-space: nowrap;
+            color: #fff;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: 0.2s ease;
+            position: relative;
+        }
+        
+        .butn:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid #ccc;
+            transition: 0.3s;
+            visibility: hidden;
+            opacity: 0;
+        }
+        
+        .butn:hover:before {
+            top: -6px;
+            left: -6px;
+            right: -6px;
+            bottom: -6px;
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        .butn.butn--dark {
+            min-width: 170px;
+            background-color: #242424;
+        }
+        
+        .butn.butn--dark:before {
+            border-color: #242424;
+        }
+        
+        .butn.butn--loading {
+            opacity: 0.5;
+        }
+        
+        .butn.butn--loading:before {
+            top: -6px;
+            left: -6px;
+            right: -6px;
+            bottom: -6px;
+            opacity: 1;
+            visibility: visible;
+            -webkit-animation: loading-anim 1.5s infinite;
+            animation: loading-anim 1.5s infinite;
+            -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+        }
+        
+        @-webkit-keyframes loading-anim {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes loading-anim {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        #qwert {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            background-color: white;
+            text-align: left;
+            color: black;
+            font-style: italic;
+            line-height: 30pt;
+        }
+    </style>
 
 </head>
+
 <body>
-	<div class="super_container">
-			<!-- Header -->
+    <div class="super_container">
+        <!-- Header -->
 
-			<header class="header">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-							<div class="header_content d-flex flex-row align-items-center justify-content-start">
-								<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
-									<div class="logo"><a href="/">
-										<h2>Titiksha'19</h2>
-									</a></div>
-												<nav class="main_nav">
-													<ul class="d-flex flex-row align-items-start justify-content-start">
-															<li><a href="#team">Our Team</a></li>
-															<li><a href="gallery.html">Gallery</a></li>
-															<li><a href="news.html">Events</a></li>
-															<li><a href="titiksha18.html">History</a></li>
-															<li><a href="contact.html">Contact Us</a></li>
-															<li><a href="#sponsor">Sponsors</a></li>
-															<li><a href="http://icrtaet.smvdu.ac.in/" target="_blank">Icrtaet</a></li>
-															<li><a href="/account">Profile</a></li>
-			
-													</ul>
-												</nav>
-												
-									<!-- Hamburger -->
-			
-									<div class="hamburger ml-auto">
-										<i class="fa fa-bars" aria-hidden="true"></i>
-									</div>
-			
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
-			
-			<!-- Menu -->
-			
-			<div class="menu">
-				<div class="menu_header d-flex flex-row align-items-center justify-content-start">
-					<div class="menu_logo"><a href="/">Titiksha'19</a></div>
-					<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
-				</div>
-				<div class="menu_content">
-					<ul>
-						<br><br><br><br>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="news.html">Events</a></li>
-							<li><a href="#team" target="_blank">Our Team</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
-							<li><a href="#sponsor" target="_blank">Sponsors</a></li>
-							<li><a href="titiksha18.html">History</a></li>
-							<li><a href="http://icrtaet.smvdu.ac.in/" target="_blank">Icrtaet</a></li>
-							<li><a href="/account">Profile</a></li>
-					</ul>
-				</div>
-				
-			</div>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                            <div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+                                <div class="logo">
+                                    <a href="/">
+                                        <h2>Titiksha'19</h2>
+                                    </a>
+                                </div>
+                                <nav class="main_nav">
+                                    <ul class="d-flex flex-row align-items-start justify-content-start">
+                                        <li><a href="#team">Our Team</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li><a href="news.html">Events</a></li>
+                                        <li><a href="titiksha18.html">History</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="#sponsor">Sponsors</a></li>
+                                        <li><a href="http://icrtaet.smvdu.ac.in/" target="_blank">Icrtaet</a></li>
+                                        <li><a href="/account">Profile</a></li>
 
-	<div class="home">
+                                    </ul>
+                                </nav>
+
+                                <!-- Hamburger -->
+
+                                <div class="hamburger ml-auto">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Menu -->
+
+        <div class="menu">
+            <div class="menu_header d-flex flex-row align-items-center justify-content-start">
+                <div class="menu_logo"><a href="/">Titiksha'19</a></div>
+                <div class="menu_close_container ml-auto">
+                    <div class="menu_close">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_content">
+                <ul>
+                    <br><br><br><br>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="news.html">Events</a></li>
+                    <li><a href="#team" target="_blank">Our Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#sponsor" target="_blank">Sponsors</a></li>
+                    <li><a href="titiksha18.html">History</a></li>
+                    <li><a href="http://icrtaet.smvdu.ac.in/" target="_blank">Icrtaet</a></li>
+                    <li><a href="/account">Profile</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="home">
 
 
-		<div class="home_slider_container">
-			<div class="owl-carousel owl-theme home_slider">
+            <div class="home_slider_container">
+                <div class="owl-carousel owl-theme home_slider">
 
-				<div class="owl-item">
-						<div class="background_image" style="background-image:url(static/images/7.gif)">
-						<!--
+                    <div class="owl-item">
+                        <div class="background_image" style="background-image:url(static/images/1.jpg)">
+                            <!--
 							
 							<div class="alert1 col text-center col-sm-12 col-md-12 col-lg-6 col-xl-3">
 								<h5>
 								website is under construction...
 							</h5>	</div>
 							-->
-						<section class="home_slider_content_container col-sm-12 col-md-12 col-lg-12 col-xl-12">
-							<div class="container col text-center">
-									<img src="{% static 'images/logo.svg' %}"
-									height="150px";
-									width="4px";>
-										<!--
+                            <section class="home_slider_content_container col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="container col text-center">
+                                    <img src="{% static 'images/logo.svg' %}" height="150px" ; width="4px" ;>
 
-													<div class="scene">
-														<div class="wrapper">
-														  <div class="globe">
-															<span class="ring"></span>
-															<span class="ring"></span>
-															<span class="ring"></span>
-															<span class="ring"></span>
-															<span class="ring"></span>
-															<span class="ring"></span>
-															<span class="ring"></span>
-															  <span class="ring"></span>
-															<span class="ring"></span>
-															<span class="ring"></span>
-														  </div>
-														</div>
-										
-											
-											<div class="">		
-											<section id="z">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="home_slider_content">
+                                                <div class="home_title">
+                                                    <p>
+                                                        <font color="red">
+                                                            <h1>Shri Mata Vaishno Devi University</h1>
+                                                        </font>
+                                                    </p>
+                                                </div>
+                                                <h1>Titiksha'19</h1><br><br><br><br><br><br><br><br><br><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="scrollmenu">
+                                        <font color="red">
+                                            <h3>
+                                                Notification: This site is currenty under construction (Beta version).
+                                            </h3>
+                                        </font>
+                                    </div>
+                                </div>
+                            </section>
 
-													<div class='👁️'>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-														</div>
-														<div class='👁️'>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-														</div>
-														<div class='👁️'>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-														</div>
-														<div class='👁️'>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-														</div>
-														<div class='👁️'>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-														</div>
-														<div class='👁️'>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-														</div>
-														<div class='👁️'>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-														</div>
-														<div class='👁️'>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-														</div>
-														<div class='👁️'>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-														</div>
-														<div class='👁️'>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-															<div class='💀'></div>
-														</div>
-												</section>
-											</div>
-										
-										-->
-							<div class="row">
-								<div class="col">
-									<div class="home_slider_content">
-										<div class="home_title"><p><font color="red"><h1>Shri Mata Vaishno Devi University</h1></font></p></div>
-											<h1>Titiksha'19</h1>
-									</div>
-								</div>
-								</div>
-								<div class="scrollmenu2">
-										<font color="red">
-										<h4>
-												Notification: This site is currenty under construction (Beta version).
-										</h4>
-								</font>
-								</div>
-							</div>
-						</section>
-
-					<!--	<section id="ral" >
+                            <!--	<section id="ral" >
 							<font color="#00d2ff"><h2 class="col text-center">LATEST NEWS</h2></font>
 							<ul>govind</ul>
 							<ul>govind</ul>
 							<ul>govind</ul>
 						</section>  -->
 
-					</div>
-				</div>
-			</div>
-			</div>
-			</div>
-	</div>
-	<br><br><br>
-			<div class="container col text-center">
-				<div id="overlay" onclick="off()">
-						<div id="text2">
-						Coming Soon... <br>
-					
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container col text-center">
+        <div id="overlay" onclick="off()">
+            <div id="text2">
+                Coming Soon... <br>
 
-						</div>
-			    </div>
-					  <div style="padding:20px">
-						<button onclick="on()">
+
+            </div>
+        </div>
+        <div style="padding:20px">
+            <button onclick="on()">
 							<font size="6" style="color:#fe8c00">Recent Activity</font>
 						</button>
-					  </div>
-			</div>
+        </div>
+    </div>
 
-<!--About us-->
-	<div id="about" >
-		<div class="container">
-				<div class="row">
-					<div class="col text-center">
-						<font size="10" style="color:#11FFBD;" >About Titiksha</font>
-					</div>
-				</div>
-					<div class="col-lg-12">
-						<div class="about_content">
-							<div id="qwert">
-									
-								Titiksha has been an example in achieving
-								huge feats with unparalleled figures
-								ever since its inception in 2008.
-								Titiksha has grown in stature in terms of its content,
-								infrastructure and logistics. The overwhelming
-								crowd of such a high magnitude and a world-class
-								technological display along with a tinge
-								of enjoyment has made our dream a technological
-								extravaganza. With such vastness and diversity,
-								the hospitality of the guests is of paramount importance.
-								We, at Titiksha, constantly strive towards the satisfaction
-								of everyone. We shall leave no stone unturned in
-								fulfilling the needs of a secure accommodation away
-								from home. Along with accommodation facilities for
-								our participants, we also set up a cafeteria serving
-								a variety of cuisines satisfying the needs of every
-								palate. We strive to make your stay comfortable and your
-								experience, a memorable one.<button type="button" class="btn btn-link btn-lg">
+    <!--About us-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <font size="10" style="color:#11FFBD;">About Titiksha</font>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="about_content">
+                    <div id="qwert">
+
+                        Titiksha has been an example in achieving huge feats with unparalleled figures ever since its inception in 2008. Titiksha has grown in stature in terms of its content, infrastructure and logistics. The overwhelming crowd of such a high magnitude and a
+                        world-class technological display along with a tinge of enjoyment has made our dream a technological extravaganza. With such vastness and diversity, the hospitality of the guests is of paramount importance. We, at Titiksha, constantly
+                        strive towards the satisfaction of everyone. We shall leave no stone unturned in fulfilling the needs of a secure accommodation away from home. Along with accommodation facilities for our participants, we also set up a cafeteria
+                        serving a variety of cuisines satisfying the needs of every palate. We strive to make your stay comfortable and your experience, a memorable one.<button type="button" class="btn btn-link btn-lg">
 									<a href="about.html">Continue reading...</a></button>
-							</div>													
-														
-													
-											
-						</div>
-				</div>
-			</div>
-	</div>
-<!--sponsor-->
-		<section id="sponsor" style="background-color:hsla(66, 58%, 49%, 0.712)" >
-			<div class="col text-center" class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-				<div class="section_title"><h2>Sponsors</h2></div>
-				<br>
-				<h3 >Sponsors are Coming Soon</h3>
-			</div>
-			<!--
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--sponsor-->
+    <section id="sponsor" style="background-color:hsla(66, 58%, 49%, 0.712)">
+        <div class="col text-center" class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+            <div class="section_title">
+                <h2>Sponsors</h2>
+            </div>
+            <br>
+            <h3>Sponsors are Coming Soon</h3>
+        </div>
+        <!--
 					<img class="col-sm-12 col-md-6 col-lg-6 col-xl-5"
 					src="{% static 'images/s2.jpg' %}">
 					<img class="col-sm-12 col-md-6 col-lg-6 col-xl-5"
 					src="{% static 'images/s2.jpg' %}">
 			-->
-		</section>
-<section id="team" class="col text-center">
-		<h1> Team Members</h1>
-		<div class="team-section">
-			<div class="card"  class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-				<div class="layer"></div>
-				<div class="content">
-					<p><strong>intro</strong></p>
-					<div class="image"><img src="{% static 'images/yugulsir.png' %}" alt="person1" id="mgh"></div>
-					<div class="details">
-					<h2>Dr. Yugal Khajuria<br><span>Dean Of Student</span></h2>
-					</div>
-				</div>
-			</div>
-			<div class="card"  class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-				<div class="layer"></div>
-				<div class="content">
-					<p><strong>intro</strong></p>
-					<div class="image">
-						<img src="{% static 'images/rakeshsir1.jpg' %}" alt="person2" id="mgh">
-					</div>
-					<div class="details">
-					<h2>Dr. Rakesh Kumar Jha<br><span>
+    </section>
+    <section id="team" class="col text-center">
+        <h1> Team Members</h1>
+        <div class="team-section">
+            <div class="card" class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="layer"></div>
+                <div class="content">
+                    <p><strong>intro</strong></p>
+                    <div class="image"><img src="{% static 'images/yugulsir.png' %}" alt="person1" id="mgh"></div>
+                    <div class="details">
+                        <h2>Dr. Yugal Khajuria<br><span>Dean Of Student</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="card" class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="layer"></div>
+                <div class="content">
+                    <p><strong>intro</strong></p>
+                    <div class="image">
+                        <img src="{% static 'images/rakeshsir1.jpg' %}" alt="person2" id="mgh">
+                    </div>
+                    <div class="details">
+                        <h2>Dr. Rakesh Kumar Jha<br><span>
 					Faculty Advisor Titiksha
 					</span></h2>
-					</div>
-				</div>
-			</div>
-			<div class="card"  class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-				<div class="layer"></div>
-				<div class="content">
-			<p><strong>intro</strong></p>
-					<div class="image">
-							<img src="{% static 'images/flogo.jpg' %}" alt="person3"></div>
-					<div class="details">
-					<h2>Name
-						<br><span>Core Committee Head</span></h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col text-center">
-				<a href="team.html" class="butn butn--dark butn--loading">Our Team Members</a>
-			</div>
-</section>
+                    </div>
+                </div>
+            </div>
+            <div class="card" class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="layer"></div>
+                <div class="content">
+                    <p><strong>intro</strong></p>
+                    <div class="image">
+                        <img src="{% static 'images/flogo.jpg' %}" alt="person3"></div>
+                    <div class="details">
+                        <h2>Name
+                            <br><span>Core Committee Head</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col text-center">
+            <a href="team.html" class="butn butn--dark butn--loading">Our Team Members</a>
+        </div>
+    </section>
 
-<section style="background-color:rgb(54, 63, 66)">
-		<div class="container">
-				<div class="row">
-				<div class="col text-center">
-					<div class="section_title"><font color="red"><h2>
-						Shri Mata Vaishno Devi University</h2></font>
-					</div>				</div>
-				</div>
-				<div class="col text-center">
-					<div class="owl-item text-center">
-						<div class="testimonial">Katra,Jammu & Kashmir,182320</div>
-					<body>
-							<ul class="col text-center">
-									<font size="6">
-								<a id="qw" href="https://www.facebook.com/Titksha.smvdu/">
-										<i class="fa fa-facebook"></i></a>
-								<a id="qw" href="mailto:titiksha@smvdu.ac.in">
-								<i class="fa fa-google-plus"></i></a>
-									<a id="qw" href="https://www.instagram.com/titiksha_smvdu/">
-								<i class="fa fa-instagram"></i></a>
-								</font>
-							</ul>
-						</body>
-					</div>
-					</div>
-		</div>
+    <section style="background-color:rgb(54, 63, 66)">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="section_title">
+                        <font color="red">
+                            <h2>
+                                Shri Mata Vaishno Devi University</h2>
+                        </font>
+                    </div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="owl-item text-center">
+                    <div class="testimonial">Katra,Jammu & Kashmir,182320</div>
 
-	</section>
+                    <body>
+                        <ul class="col text-center">
+                            <font size="6">
+                                <a id="qw" href="https://www.facebook.com/Titksha.smvdu/">
+                                    <i class="fa fa-facebook"></i></a>
+                                <a id="qw" href="mailto:titiksha@smvdu.ac.in">
+                                    <i class="fa fa-google-plus"></i></a>
+                                <a id="qw" href="https://www.instagram.com/titiksha_smvdu/">
+                                    <i class="fa fa-instagram"></i></a>
+                            </font>
+                        </ul>
+                    </body>
+                </div>
+            </div>
+        </div>
 
-<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
-<script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
-<script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
-<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
-<script src="{% static 'plugins/Isotope/isotope.pkgd.min.js' %}"></script>
-<script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js' %}"></script>
-<script src="{% static 'plugins/easing/easing.js' %}"></script>
-<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
-<script src="{% static 'js/custom.js' %}"></script>
-<script src="{% static 'js/ani.js' %}"></script>
-<script src="{% static 'js/drop.js' %}"></script>
-<script>
-		function on() {
-			document.getElementById("overlay").style.display = "block";
-		  }
+    </section>
 
-		  function off() {
-			document.getElementById("overlay").style.display = "none";
-		  }
-</script>
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
+    <script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
+    <script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+    <script src="{% static 'plugins/Isotope/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js' %}"></script>
+    <script src="{% static 'plugins/easing/easing.js' %}"></script>
+    <script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/ani.js' %}"></script>
+    <script src="{% static 'js/drop.js' %}"></script>
+    <script>
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
 </body>
+
 </html>

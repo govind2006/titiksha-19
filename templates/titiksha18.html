@@ -1,206 +1,404 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Titiksha'19</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
-<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'social.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'team.css' %}">
-<link rel="shortcut icon" type="image/jpg" href="{% static 'images/flogo.jpg' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/about.css' %}">
+    <title>Titiksha'19</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+    <link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'social.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'team.css' %}">
+    <link rel="shortcut icon" type="image/jpg" href="{% static 'images/flogo.jpg' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/about.css' %}">
 
-<link rel="stylesheet" type="text/css" href="{% static 'styles/about_responsive.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/about_responsive.css' %}">
 
-		<style>
-			#htext
-			{
-				font-family: sans-serif;
-				background-color: azure;
-				color: #000;
-				padding: 15px 17px 15px 17px;
-				font-size: 20px;
-				line-height: 30px;
-				word-spacing: 6px;
-				text-align: justify;
-			}
-
-
-			.gallery
-			{
-				margin: 10px 50px;
-				text-align: center;
-			}
-			.gallery img
-			{
-				width:250px;
-				height: 275px;
-				padding: 5px;
-				transition: 1s;
-			}
-			.gallery img:hover{
-				transform: scale(1.1);
-			}
-			.qwe
-			{
-				padding-top: 180px;
-			}
-			@media only screen and (max-width: 600px) {
-				.qwe {
-					padding-top: 75px;
-				}
-			  }
-	.lb-loader,.lightbox{text-align:center;line-height:0;position:absolute;left:0}body.lb-disable-scrolling{overflow:hidden}.lightboxOverlay{position:absolute;top:0;left:0;z-index:9999;background-color:#000;filter:alpha(Opacity=80);opacity:.8;display:none}.lightbox{width:100%;z-index:10000;font-weight:400;outline:0}.lightbox .lb-image{display:block;height:auto;max-width:inherit;max-height:none;border-radius:3px;border:4px solid #fff}.lightbox a img{border:none}.lb-outerContainer{position:relative;width:250px;height:250px;margin:0 auto;border-radius:4px;background-color:#fff}.lb-outerContainer:after{content:"";display:table;clear:both}.lb-loader{top:43%;height:25%;width:100%}.lb-cancel{display:block;width:32px;height:32px;margin:0 auto;background:url(../images/loading.gif) no-repeat}.lb-nav{position:absolute;top:0;left:0;height:100%;width:100%;z-index:10}.lb-container>.nav{left:0}.lb-nav a{outline:0;background-image:url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)}.lb-next,.lb-prev{height:100%;cursor:pointer;display:block}.lb-nav a.lb-prev{width:34%;left:0;float:left;background:url(../images/prev.png) left 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}.lb-nav a.lb-prev:hover{filter:alpha(Opacity=100);opacity:1}.lb-nav a.lb-next{width:64%;right:0;float:right;background:url(../images/next.png) right 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}.lb-nav a.lb-next:hover{filter:alpha(Opacity=100);opacity:1}.lb-dataContainer{margin:0 auto;padding-top:5px;width:100%;border-bottom-left-radius:4px;border-bottom-right-radius:4px}.lb-dataContainer:after{content:"";display:table;clear:both}.lb-data{padding:0 4px;color:#ccc}.lb-data .lb-details{width:85%;float:left;text-align:left;line-height:1.1em}.lb-data .lb-caption{font-size:13px;font-weight:700;line-height:1em}.lb-data .lb-caption a{color:#4ae}.lb-data .lb-number{display:block;clear:left;padding-bottom:1em;font-size:12px;color:#999}.lb-data .lb-close{display:block;float:right;width:30px;height:30px;background:url(../images/close.png) top right no-repeat;text-align:right;outline:0;filter:alpha(Opacity=70);opacity:.7;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}.lb-data .lb-close:hover{cursor:pointer;filter:alpha(Opacity=100);opacity:1}
-	
-
-			</style>
+    <style>
+        #htext {
+            font-family: sans-serif;
+            background-color: azure;
+            color: goldenrod;
+            border: solid;
+            border-color: green;
+            padding: 15px 170px 15px 170px;
+            font-size: 18px;
+            line-height: 30px;
+            word-spacing: 6px;
+            text-align: justify;
+        }
+        
+        .gallery {
+            margin: 10px 50px;
+            text-align: center;
+        }
+        
+        .gallery img {
+            width: 250px;
+            height: 275px;
+            padding: 5px;
+            transition: 1s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        
+        .qwe {
+            padding-top: 180px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .qwe {
+                padding-top: 75px;
+            }
+        }
+        
+        .lb-loader,
+        .lightbox {
+            text-align: center;
+            line-height: 0;
+            position: absolute;
+            left: 0
+        }
+        
+        body.lb-disable-scrolling {
+            overflow: hidden
+        }
+        
+        .lightboxOverlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            background-color: #000;
+            filter: alpha(Opacity=80);
+            opacity: .8;
+            display: none
+        }
+        
+        .lightbox {
+            width: 100%;
+            z-index: 10000;
+            font-weight: 400;
+            outline: 0
+        }
+        
+        .lightbox .lb-image {
+            display: block;
+            height: auto;
+            max-width: inherit;
+            max-height: none;
+            border-radius: 3px;
+            border: 4px solid #fff
+        }
+        
+        .lightbox a img {
+            border: none
+        }
+        
+        .lb-outerContainer {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            margin: 0 auto;
+            border-radius: 4px;
+            background-color: #fff
+        }
+        
+        .lb-outerContainer:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+        
+        .lb-loader {
+            top: 43%;
+            height: 25%;
+            width: 100%
+        }
+        
+        .lb-cancel {
+            display: block;
+            width: 32px;
+            height: 32px;
+            margin: 0 auto;
+            background: url(../images/loading.gif) no-repeat
+        }
+        
+        .lb-nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 10
+        }
+        
+        .lb-container>.nav {
+            left: 0
+        }
+        
+        .lb-nav a {
+            outline: 0;
+            background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
+        }
+        
+        .lb-next,
+        .lb-prev {
+            height: 100%;
+            cursor: pointer;
+            display: block
+        }
+        
+        .lb-nav a.lb-prev {
+            width: 34%;
+            left: 0;
+            float: left;
+            background: url(../images/prev.png) left 48% no-repeat;
+            filter: alpha(Opacity=0);
+            opacity: 0;
+            -webkit-transition: opacity .6s;
+            -moz-transition: opacity .6s;
+            -o-transition: opacity .6s;
+            transition: opacity .6s
+        }
+        
+        .lb-nav a.lb-prev:hover {
+            filter: alpha(Opacity=100);
+            opacity: 1
+        }
+        
+        .lb-nav a.lb-next {
+            width: 64%;
+            right: 0;
+            float: right;
+            background: url(../images/next.png) right 48% no-repeat;
+            filter: alpha(Opacity=0);
+            opacity: 0;
+            -webkit-transition: opacity .6s;
+            -moz-transition: opacity .6s;
+            -o-transition: opacity .6s;
+            transition: opacity .6s
+        }
+        
+        .lb-nav a.lb-next:hover {
+            filter: alpha(Opacity=100);
+            opacity: 1
+        }
+        
+        .lb-dataContainer {
+            margin: 0 auto;
+            padding-top: 5px;
+            width: 100%;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px
+        }
+        
+        .lb-dataContainer:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+        
+        .lb-data {
+            padding: 0 4px;
+            color: #ccc
+        }
+        
+        .lb-data .lb-details {
+            width: 85%;
+            float: left;
+            text-align: left;
+            line-height: 1.1em
+        }
+        
+        .lb-data .lb-caption {
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1em
+        }
+        
+        .lb-data .lb-caption a {
+            color: #4ae
+        }
+        
+        .lb-data .lb-number {
+            display: block;
+            clear: left;
+            padding-bottom: 1em;
+            font-size: 12px;
+            color: #999
+        }
+        
+        .lb-data .lb-close {
+            display: block;
+            float: right;
+            width: 30px;
+            height: 30px;
+            background: url(../images/close.png) top right no-repeat;
+            text-align: right;
+            outline: 0;
+            filter: alpha(Opacity=70);
+            opacity: .7;
+            -webkit-transition: opacity .2s;
+            -moz-transition: opacity .2s;
+            -o-transition: opacity .2s;
+            transition: opacity .2s
+        }
+        
+        .lb-data .lb-close:hover {
+            cursor: pointer;
+            filter: alpha(Opacity=100);
+            opacity: 1
+        }
+    </style>
 </head>
+
 <body style="background-color:black">
-<div class="super_container">
-			<!-- Header -->
+    <div class="super_container">
+        <!-- Header -->
 
-			<header class="header">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-							<div class="header_content d-flex flex-row align-items-center justify-content-start">
-								<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
-									<div class="logo"><a href="/"><h2>Titiksha'19</h2></a></div>
-												<nav class="main_nav">
-													<ul class="d-flex flex-row align-items-start justify-content-start">
-														<li><a href="/">Home</a></li>
-														<li><a href="team.html">Our Team</a></li>
-														<li><a href="gallery.html">Gallery</a></li>
-														<li><a href="news.html">Events</a></li>
-														<li><a href="titiksha18.html">History</a></li>
-														<li><a href="contact.html">Contact Us</a></li>
-														<li><a href="http://icrtaet.smvdu.ac.in/" target="_blank">Icrtaet</a></li>
-														<li><a href="/account">Profile</a></li>
-													
-												</ul>
-												</nav>
-												
-									<!-- Hamburger -->
-			
-									<div class="hamburger ml-auto">
-										<i class="fa fa-bars" aria-hidden="true"></i>
-									</div>
-			
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
-			
-			<!-- Menu -->
-			
-			<div class="menu">
-				<div class="menu_header d-flex flex-row align-items-center justify-content-start">
-					<div class="menu_logo"><a href="/">Titiksha'19</a></div>
-					<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
-				</div>
-				<div class="menu_content">
-					<ul>
-						<br><br><br><br>
-						<li><a href="/">Home</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="news.html">Events</a></li>
-						<li><a href="team.html">Our Team</a></li>
-						<li><a href="titiksha18.html">History</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
-						<li><a href="http://icrtaet.smvdu.ac.in/" target="_blank">Icrtaet</a></li>
-						<li><a href="/account">Profile</a></li>
-				</ul>
-				</div>
-				
-			</div>
-							<div class="background_image" style="background-image:url(static/images/star.jpg)">
-								
-								<div class="qwe">
-									<img class="col text-center" src="{% static 'images/logo.svg' %}" height="150px"; width="350px";>
-						
-									
-													<p><font color="red"><h1 class="col text-center">
-														Shri Mata Vaishno Devi University</h1>
-													</font></p>
-													<h1 class="col text-center">Titiksha'19</h1>
-													<h1 class="col text-center">History</h1>
-												</div>
-							</div>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                            <div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+                                <div class="logo">
+                                    <a href="/">
+                                        <h2>Titiksha'19</h2>
+                                    </a>
+                                </div>
+                                <nav class="main_nav">
+                                    <ul class="d-flex flex-row align-items-start justify-content-start">
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="team.html">Our Team</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li><a href="news.html">Events</a></li>
+                                        <li><a href="titiksha18.html">History</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="http://icrtaet.smvdu.ac.in/" target="_blank">Icrtaet</a></li>
+                                        <li><a href="/account">Profile</a></li>
 
-											
-			
-		</div>
-	<section id="htext">
-		
-					Titiksha has always been a grand 
-					festival of technological display,
-					entertainment and joy in the SMVDU campus and every year 
-					since its inception in 2008 the students comes out with a 
-					new theme and then work on achieving a great technological 
-					success by organising various events.Every year various technological 
-					conferences are organised to make the students aware
-					about the latest topics of technological advancement and of great
-					concern.Various experts are called from across the country to deliver
-					lectures and fill the young student's mind with apt knowledge.Research 
-					Papers are also displayed and acknowledged. 
-					Also every year students awaits the amazing star nights and other
-					enjoyable performances by various eminent personalities like the Wadali
-					brothers and stars like Ninja, Raftaar, Hardy Sandhu and many more.It is
-					a night full of music, dance and loads of joy and entertainment and is enjoyed
-					by one and all.Every year we strive to invite wonderful star performers to
-					entertain our audience and this always goes by our expectation and proves to
-					be a great success.
-		
-		</section>
+                                    </ul>
+                                </nav>
 
-		<div class="gallery">
-			<a href="{% static 'images/1.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/1.jpg' %}"></a>
-			<a href="{% static 'images/2.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/2.jpg' %}"></a>
-			<a href="{% static 'images/3.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/3.jpg' %}"></a>
-			<a href="{% static 'images/4.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/4.jpg' %}"></a>
-			<a href="{% static 'images/5.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/5.jpg' %}"></a>
-			<a href="{% static 'images/6.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/6.jpg' %}"></a>
-			<a href="{% static 'images/7.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/7.jpg' %}"></a>
-			<a href="{% static 'images/8.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/8.jpg' %}"></a>
-			<a href="{% static 'images/9.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/9.jpg' %}"></a>
-			<a href="{% static 'images/10.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/10.jpg' %}"></a>
-			<a href="{% static 'images/11.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/11.jpg' %}"></a>
-			<a href="{% static 'images/12.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/12.jpg' %}"></a>
-			<a href="{% static 'images/13.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/13.jpg' %}"></a>
-			<a href="{% static 'images/14.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/14.jpg' %}"></a>
-			<a href="{% static 'images/15.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/15.jpg' %}"></a>
-			<a href="{% static 'images/16.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/16.jpg' %}"></a>
-			<a href="{% static 'images/17.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/17.jpg' %}"></a>
-			<a href="{% static 'images/18.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/18.jpg' %}"></a>
-			<a href="{% static 'images/19.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/19.jpg' %}"></a>
-			<a href="{% static 'images/20.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/20.jpg' %}"></a>
-			<a href="{% static 'images/21.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/21.jpg' %}"></a>
-			<a href="{% static 'images/22.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/22.jpg' %}"></a>
-			<a href="{% static 'images/23.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/23.jpg' %}"></a>
-			<a href="{% static 'images/24.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/24.jpg' %}"></a>
-			<a href="{% static 'images/25.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/25.jpg' %}"></a>
-			<a href="{% static 'images/26.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/26.jpg' %}"></a>
-			<a href="{% static 'images/27.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/27.jpg' %}"></a>
-			<a href="{% static 'images/28.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/28.jpg' %}"></a>
-			<a href="{% static 'images/29.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/29.jpg' %}"></a>
-			<a href="{% static 'images/30.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/30.jpg' %}"></a>
-			<a href="{% static 'images/31.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/31.jpg' %}"></a>
-			<a href="{% static 'images/33.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/33.jpg' %}"></a>
-		</div>
+                                <!-- Hamburger -->
 
-			<!--
+                                <div class="hamburger ml-auto">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Menu -->
+
+        <div class="menu">
+            <div class="menu_header d-flex flex-row align-items-center justify-content-start">
+                <div class="menu_logo"><a href="/">Titiksha'19</a></div>
+                <div class="menu_close_container ml-auto">
+                    <div class="menu_close">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_content">
+                <ul>
+                    <br><br><br><br>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="news.html">Events</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="titiksha18.html">History</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="http://icrtaet.smvdu.ac.in/" target="_blank">Icrtaet</a></li>
+                    <li><a href="/account">Profile</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="background_image" style="background-image:url(static/images/star.jpg)">
+
+            <div class="qwe">
+                <img class="col text-center" src="{% static 'images/logo.svg' %}" height="150px" ; width="350px" ;>
+
+
+                <p>
+                    <font color="red">
+                        <h1 class="col text-center">
+                            Shri Mata Vaishno Devi University</h1>
+                    </font>
+                </p>
+                <h1 class="col text-center">Titiksha'19</h1>
+                <h2 class="col text-center">History</h2>
+            </div>
+        </div>
+
+
+
+    </div>
+    <section id="htext">
+
+        Titiksha has always been a grand festival of technological display, entertainment and joy in the SMVDU campus and every year since its inception in 2008 the students comes out with a new theme and then work on achieving a great technological success by
+        organising various events. Every year various technological conferences are organised to make the students aware more about the latest topics of technological advancement and of great concern. Various experts are called from across the country
+        to deliver lectures and fill the young student's mind with apt knowledge. Research Papers are also displayed and acknowledged. Also every year students awaits the amazing star nights and other enjoyable performances by various eminent personalities
+        like the Wadali brothers and stars like Ninja, Raftaar, Hardy Sandhu and many more. It is a night full of music, dance and loads of joy and entertainment and is enjoyed by one and all. Every year we strive to invite wonderful star performers to
+        entertain our audience and this always goes by our expectation and proves to be a great success.
+
+    </section>
+
+    <div class="gallery">
+        <a href="{% static 'images/1.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/1.jpg' %}"></a>
+        <a href="{% static 'images/2.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/2.jpg' %}"></a>
+        <a href="{% static 'images/3.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/3.jpg' %}"></a>
+        <a href="{% static 'images/4.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/4.jpg' %}"></a>
+        <a href="{% static 'images/5.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/5.jpg' %}"></a>
+        <a href="{% static 'images/6.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/6.jpg' %}"></a>
+        <a href="{% static 'images/7.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/7.jpg' %}"></a>
+        <a href="{% static 'images/8.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/8.jpg' %}"></a>
+        <a href="{% static 'images/9.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/9.jpg' %}"></a>
+        <a href="{% static 'images/10.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/10.jpg' %}"></a>
+        <a href="{% static 'images/11.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/11.jpg' %}"></a>
+        <a href="{% static 'images/12.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/12.jpg' %}"></a>
+        <a href="{% static 'images/13.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/13.jpg' %}"></a>
+        <a href="{% static 'images/14.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/14.jpg' %}"></a>
+        <a href="{% static 'images/15.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/15.jpg' %}"></a>
+        <a href="{% static 'images/16.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/16.jpg' %}"></a>
+        <a href="{% static 'images/17.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/17.jpg' %}"></a>
+        <a href="{% static 'images/18.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/18.jpg' %}"></a>
+        <a href="{% static 'images/19.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/19.jpg' %}"></a>
+        <a href="{% static 'images/20.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/20.jpg' %}"></a>
+        <a href="{% static 'images/21.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/21.jpg' %}"></a>
+        <a href="{% static 'images/22.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/22.jpg' %}"></a>
+        <a href="{% static 'images/23.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/23.jpg' %}"></a>
+        <a href="{% static 'images/24.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/24.jpg' %}"></a>
+        <a href="{% static 'images/25.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/25.jpg' %}"></a>
+        <a href="{% static 'images/26.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/26.jpg' %}"></a>
+        <a href="{% static 'images/27.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/27.jpg' %}"></a>
+        <a href="{% static 'images/28.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/28.jpg' %}"></a>
+        <a href="{% static 'images/29.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/29.jpg' %}"></a>
+        <a href="{% static 'images/30.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/30.jpg' %}"></a>
+        <a href="{% static 'images/31.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/31.jpg' %}"></a>
+        <a href="{% static 'images/33.jpg' %}" data-lightbox="mygallery"><img src="{% static 'images/33.jpg' %}"></a>
+    </div>
+
+    <!--
 				<div class="zoomin" class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
 
 					<img id="ph" class="zoom" src="{% static 'images/1.jpg' %}" >
@@ -242,45 +440,51 @@
 				-->
 
 
-<section style="background-color:rgb(54, 63, 66)">
-		<div class="container">
-				<div class="row">
-				<div class="col text-center">
-					<div class="section_title"><font color="red"><h2>
-						Shri Mata Vaishno Devi University</h2></font>
-					</div>				</div>
-				</div>
-				<div class="col text-center">
-					<div class="owl-item text-center">
-						<div class="testimonial">Katra,Jammu & Kashmir,182320</div>
-					<body>
-							<ul class="col text-center">
-									<font size="6">
-								<a id="qw" href="https://www.facebook.com/Titksha.smvdu/">
-										<i class="fa fa-facebook"></i></a>
-								<a id="qw" href="mailto:titiksha@smvdu.ac.in">
-								<i class="fa fa-google-plus"></i></a>
-									<a id="qw" href="https://www.instagram.com/titiksha_smvdu/">
-								<i class="fa fa-instagram"></i></a>
-								</font>
-							</ul>
-						</body>
-					</div>
-					</div>
-		</div>
+    <section style="background-color:rgb(54, 63, 66)">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="section_title">
+                        <font color="red">
+                            <h2>
+                                Shri Mata Vaishno Devi University</h2>
+                        </font>
+                    </div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="owl-item text-center">
+                    <div class="testimonial">Katra,Jammu & Kashmir,182320</div>
 
-	</section>
+                    <body>
+                        <ul class="col text-center">
+                            <font size="6">
+                                <a id="qw" href="https://www.facebook.com/Titksha.smvdu/">
+                                    <i class="fa fa-facebook"></i></a>
+                                <a id="qw" href="mailto:titiksha@smvdu.ac.in">
+                                    <i class="fa fa-google-plus"></i></a>
+                                <a id="qw" href="https://www.instagram.com/titiksha_smvdu/">
+                                    <i class="fa fa-instagram"></i></a>
+                            </font>
+                        </ul>
+                    </body>
+                </div>
+            </div>
+        </div>
 
-<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
-<script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
-<script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
-<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
-<script src="{% static 'plugins/Isotope/isotope.pkgd.min.js' %}"></script>
-<script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js' %}"></script>
-<script src="{% static 'plugins/easing/easing.js' %}"></script>
-<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
-<script src="{% static 'js/custom.js' %}"></script>
-<script src="{% static 'js/lightbox-plus-jquery.min.js' %}"></script>
+    </section>
+
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
+    <script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
+    <script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+    <script src="{% static 'plugins/Isotope/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js' %}"></script>
+    <script src="{% static 'plugins/easing/easing.js' %}"></script>
+    <script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/lightbox-plus-jquery.min.js' %}"></script>
 
 </body>
+
 </html>

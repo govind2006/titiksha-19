@@ -1,166 +1,182 @@
-  {% load static %}
+ {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Titiksha'19</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
-<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static '1.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static '2.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'animation.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="{% static 'social.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/about.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/about_responsive.css' %}">
-<link rel="shortcut icon" type="image/jpg" href="{% static 'images/flogo.jpg' %}">
-
-
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <title>Base</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-      {% block head %}
     <title>Titiksha'19</title>
-	{% endblock %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<style>
-		.home_slider_content_container
-			{
-				position: absolute;
-				left: 0;
-				width: 100%;
-				z-index: 1;
-				text-align: center;
-			}
-			.home
-			{
-				width: 100%;
-				height: 670px;
-			}
-	</style>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+    <link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '1.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '2.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'animation.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'social.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/about.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/about_responsive.css' %}">
+    <link rel="shortcut icon" type="image/jpg" href="{% static 'images/flogo.jpg' %}">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Base</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    {% block head %}
+    <title>Titiksha'19</title>
+    {% endblock %}
+
+    <style>
+        .home_slider_content_container {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            text-align: center;
+        }
+        
+        .home {
+            width: 100%;
+            height: 670px;
+        }
+    </style>
 </head>
+
 <body style="background-color:rgb(54, 63, 66)">
-		
-	<div class="super_container">
-			<div id="loader"></div>
-			<div style="display:none;" id="myDiv" class="animate-bottom">
-			</div>
-		<div class="home">
-		<div class="home_slider_container">
-			<div class="owl-carousel owl-theme home_slider">
-				<div class="owl-item">
-						<div class="background_image" style="background-image:url(/static/images/star.jpg)">
-					<section class="home_slider_content_container col-sm-12 col-md-12 col-lg-12 col-xl-12">
-							<div class="container col text-center">
-											<font color="red"><h1>
-												Welcome to Titiksha 2K19
-											</h1></font>
-									
-									<img src="{% static 'images/logo.svg' %}"
-									height="150px";
-									width="2px";>
-												
-							<div class="row">
-								<div class="col">
-									<div class="home_slider_content">
-										<div class="home_title"><p><font color="red"><h1>
-											<b> Shri Mata Vaishno Devi University</b></h1></font></p></div>
-										<font color="white"><h1><b>Titiksha'19</b></h1></font>
-									</div>
-								</div>
-								</div>
-							</div>
-							<font color="yellow"><h1>
-								<br><br>
-							<b>you can view your profile here...</b>
-							</h1></font>
-						</section>					
-					</div>
-				</div>
-			</div>
-			</div>
-			</div>
-		</div>	
-		<br><br><br>		
-		<section class="abcd" style="background-color:#000000">		
-			{% if user.is_authenticated %}
-			<ul class="col text-center">
-			   <button type="button" class="btn btn-link"><a href="/"><h3>Home</h3></a></button>
-			   <button type="button" class="btn btn-link"><a href="/account/profile"><h3>View Profile</h3></a></button>
-			   <button type="button" class="btn btn-link"><a href="/account/edit_profile"><h3>Edit Profile</h3></a></button>
-			   <button type="button" class="btn btn-link"><a href="/account/logout"><h3>Log Out</h3></a></button>
-			   <button type="button" class="btn btn-link"><a href="/account/change_password"><h3>Change Password</h3></a></button>
-			   <button type="button" class="btn btn-link"><a href="/news.html"><h3>Registration for Events</h3></a></button>
-			  </ul>
-		
-			  {% else %}
-		
-			  <ul class="col text-center">
-					<button type="button" class="btn btn-link"><a href="/"><h3>Home</h3></a></button>
-				  <button type="button" class="btn btn-link"><a href="/account/login"><h3>Login</h3></a></button>
-				  <button type="button" class="btn btn-link"><a href="/account/register"><h3>Register</h3></a></button>
-				  <button type="button" class="btn btn-link"><a href="/account/reset-password"><h3>Reset Password</h3></a></button>
-			  </ul>
-		
-			  {% endif %} 	  
-      {% block body %}
-      <h1>Titiksha'19</h1>
-      {% endblock %}
 
-		</section>
+    <div class="super_container">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+        </div>
+        <div class="home">
+            <div class="home_slider_container">
+                <div class="owl-carousel owl-theme home_slider">
+                    <div class="owl-item">
+                        <div class="background_image" style="background-image:url(/static/images/star.jpg)">
+                            <section class="home_slider_content_container col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="container col text-center">
+                                    <font color="red">
+                                        <h1>
+                                            Welcome to Titiksha 2K19
+                                        </h1>
+                                    </font>
 
-<section style="background-color:rgb(54, 63, 66)">
-		<div class="container">
-				<div class="row">										
-				<div class="col text-center">
-					<div class="section_title"><font color="red"><h1>
-						Shri Mata Vaishno Devi University</h1></font>
-					</div>				</div>
-				</div>
-				<div class="col text-center">			
-					<div class="owl-item text-center">
-						<div class="testimonial"><h3>Katra,Jammu & Kashmir,182320</h3></div>
-					<body>
-							<ul class="col text-center">
-									<font size="6">
-								<a id="qw" href="https://www.facebook.com/Titksha.smvdu/">
-										<i class="fa fa-facebook"></i></a>
-								<a id="qw" href="mailto:titiksha@smvdu.ac.in">
-								<i class="fa fa-google-plus"></i></a>
-									<a id="qw" href="https://www.instagram.com/titiksha_smvdu/">
-								<i class="fa fa-instagram"></i></a>
-								</font>
-							</ul>
-						</body>
-					</div>
-					</div>
-		</div>
+                                    <img src="{% static 'images/logo.svg' %}" height="150px" ; width="2px" ;>
 
-	</section>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="home_slider_content">
+                                                <div class="home_title">
+                                                    <p>
+                                                        <font color="red">
+                                                            <h1>
+                                                                <b> Shri Mata Vaishno Devi University</b></h1>
+                                                        </font>
+                                                    </p>
+                                                </div>
+                                                <font color="white">
+                                                    <h1><b>Titiksha'19</b></h1>
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <font color="yellow">
+                                    <h1>
+                                        <br><br>
+                                        <b>you can view your profile here...</b>
+                                    </h1>
+                                </font>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <section class="abcd" style="background-color:#000000">
+        {% if user.is_authenticated %}
+        <ul class="col text-center">
+            <button type="button" class="btn btn-link"><a href="/"><h3>Home</h3></a></button>
+            <button type="button" class="btn btn-link"><a href="/account/profile"><h3>View Profile</h3></a></button>
+            <button type="button" class="btn btn-link"><a href="/account/edit_profile"><h3>Edit Profile</h3></a></button>
+            <button type="button" class="btn btn-link"><a href="/account/logout"><h3>Log Out</h3></a></button>
+            <button type="button" class="btn btn-link"><a href="/account/change_password"><h3>Change Password</h3></a></button>
+            <button type="button" class="btn btn-link"><a href="/news.html"><h3>Registration for Events</h3></a></button>
+        </ul>
 
-<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
-<script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
-<script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
-<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
-<script src="{% static 'plugins/Isotope/isotope.pkgd.min.js' %}"></script>
-<script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js' %}"></script>
-<script src="{% static 'plugins/easing/easing.js' %}"></script>
-<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
-<script src="{% static 'js/custom.js' %}"></script>
-<script src="{% static 'js/ani.js' %}"></script>
-<script src="{% static 'js/drop.js' %}"></script>
+        {% else %}
+
+        <ul class="col text-center">
+            <button type="button" class="btn btn-link"><a href="/"><h3>Home</h3></a></button>
+            <button type="button" class="btn btn-link"><a href="/account/login"><h3>Login</h3></a></button>
+            <button type="button" class="btn btn-link"><a href="/account/register"><h3>Register</h3></a></button>
+            <button type="button" class="btn btn-link"><a href="/account/reset-password"><h3>Reset Password</h3></a></button>
+        </ul>
+
+        {% endif %} {% block body %}
+        <h1>Titiksha'19</h1>
+        {% endblock %}
+
+    </section>
+
+    <section style="background-color:rgb(54, 63, 66)">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="section_title">
+                        <font color="red">
+                            <h1>
+                                Shri Mata Vaishno Devi University</h1>
+                        </font>
+                    </div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="owl-item text-center">
+                    <div class="testimonial">
+                        <h3>Katra, Jammu & Kashmir,182320</h3>
+                    </div>
+
+                    <body>
+                        <ul class="col text-center">
+                            <font size="6">
+                                <a id="qw" href="https://www.facebook.com/Titksha.smvdu/">
+                                    <i class="fa fa-facebook"></i></a>
+                                <a id="qw" href="mailto:titiksha@smvdu.ac.in">
+                                    <i class="fa fa-google-plus"></i></a>
+                                <a id="qw" href="https://www.instagram.com/titiksha_smvdu/">
+                                    <i class="fa fa-instagram"></i></a>
+                            </font>
+                        </ul>
+                    </body>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
+    <script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
+    <script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+    <script src="{% static 'plugins/Isotope/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js' %}"></script>
+    <script src="{% static 'plugins/easing/easing.js' %}"></script>
+    <script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/ani.js' %}"></script>
+    <script src="{% static 'js/drop.js' %}"></script>
 </body>
-</html>
 
+</html>

@@ -9,7 +9,13 @@ https://docs.djangoproject.com/en/dev/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/dev/ref/settings/
 """
-import django_heroku
+#  There is no need to import heroku if you are working on you local system
+#  If there is any error related to import heroku simply follow these two steps :
+# 1. Open the settings.py in titiksha directory .
+# 2. Remove the lines :
+#       import heroku 
+#       django_heroku.setting(locals())    
+#
 
 import os
 
@@ -150,4 +156,3 @@ EMAIL_HOST_USER = '17bcs022@smvdu.ac.in'
 EMAIL_HOST_PASSWORD = 'gk3017528'
 OPERATIONS_EMAIL = 'govindkumar4672@gmail.com'
 
-django_heroku.settings(locals())
